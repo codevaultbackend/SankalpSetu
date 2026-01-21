@@ -1,46 +1,93 @@
+import Link from "next/link";
 import { eventService } from "../../../services/event.service";
-import { GetEventsResponse, EventItem } from "../../../types/event";
+import { GetEventsResponse } from "../../../types/event";
 
 export default async function EventsSection() {
-  const data: GetEventsResponse = await eventService.getEvents();
+  let data: GetEventsResponse | null = null;
 
-  return (
-    <section className="py-16 sm:py-20 lg:py-24">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+  try {
+    data = await eventService.getEvents();
+  } catch (error) {
+    console.error("Events API failed:", error);
+  }
 
-        {/* HEADER */}
-        <div className="flex items-center gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-12 lg:mb-16">
-          <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] font-semibold text-[#2E3445] whitespace-nowrap">
+  if (!data || !data.eventdetails?.length) {
+    return (
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+         
+          <h2 className="text-[40px] sm:text-[34px] lg:text-[40px] font-[500] text-[#1D2130] mb-6">
             Our Events
           </h2>
+
+          <div className="rounded-xl bg-gray-100 p-6 text-gray-600">
+            Events are temporarily unavailable.
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="py-16 sm:py-20 lg:py-24 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* HEADER */}
+        <div className="flex items-center gap-6 mb-10">
+           <div className=" flex  w-full items-center max-[600px]:flex-wrap max-[600px]:!flex-col">
+             <h2 className="text-[40px] sm:text-[34px] lg:text-[40px] font-[500] text-[#1D2130] mb-6">
+            Our Events
+          </h2>
+            <div className=" h-[1px] bg-[#E5E5E5] ml-auto w-[85%]" />
+          </div>
+         
           <div className="h-[1px] flex-1 bg-white/70" />
         </div>
 
-        {/* EVENTS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
-          {data.eventdetails.map((event: EventItem) => {
-            const today = new Date();
-            const date = today.getDate().toString();
-            const month = today
-              .toLocaleString("en-US", { month: "short" })
-              .toUpperCase();
+        {/* HORIZONTAL SCROLL */}
+        <div className="relative">
+          
+          <div
+            className="
+              grid
+              grid-cols-1
+              sm:grid-cols-2
+              sm:auto-cols-[calc(50%-12px)]
+              gap-6
+              overflow-x-auto
+              scroll-smooth
+              snap-x snap-mandatory
+              pb-4
+              scrollbar-hide
+            "
+          >
+            {data.eventdetails.map((event) => {
+              const [day, month, year] = event.eventDate.split("-");
+              const dateObj = new Date(`${year}-${month}-${day}`);
 
-            return (
-              <EventCard
-                key={event._id}
-                date={date}
-                month={month}
-                title={event.nameofevent}
-              />
-            );
-          })}
+              return (
+                <div key={event._id} className="snap-start">
+                  <EventCard
+                    date={dateObj.getDate().toString()}
+                    month={dateObj
+                      .toLocaleString("en-US", { month: "short" })
+                      .toUpperCase()}
+                    title={event.nameofevent}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
+        
       </div>
     </section>
   );
 }
 
-/* EVENT CARD */
+/* -------------------------------- */
+/* EVENT CARD (UNCHANGED DESIGN) */
+/* -------------------------------- */
+
 function EventCard({
   date,
   month,
@@ -51,39 +98,38 @@ function EventCard({
   title: string;
 }) {
   return (
-    <div className="bg-[#C9FBC8] rounded-xl px-6 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8">
-
+    <div className="bg-[#C9FBC8] rounded-xl px-6 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 h-full">
       {/* LEFT */}
-      <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8 lg:gap-10 max-w-full lg:max-w-[520px]">
-
+      <div className="flex flex-col sm:flex-row items-start gap-6 max-w-[520px]">
         {/* DATE */}
-        <div className="text-left shrink-0">
-          <div className="text-[36px] sm:text-[44px] lg:text-[52px] font-bold text-[#1F2937] leading-none">
+        <div className="shrink-0">
+          <div className="text-[36px] sm:text-[44px] lg:text-[48px] font-[500] text-[#1D2130] leading-none">
             {date}
           </div>
-          <div className="text-[14px] sm:text-[16px] font-semibold tracking-widest text-[#1F2937] mt-1 sm:mt-2">
+          <div className="text-[14px] sm:text-[16px] font-semibold tracking-widest text-[#1F2937] mt-1">
             {month}
           </div>
         </div>
 
         {/* CONTENT */}
         <div>
-          <div className="flex items-center gap-4 sm:gap-6 mb-3 sm:mb-4">
-            <span className="text-[14px] sm:text-[16px] tracking-[0.2em] font-semibold text-[#1F2937]">
+          <div className="!flex  gap-4 mb-3 ">
+            <span className="text-[16px] tracking-[0.2em] leading-[100%] font-[500] text-[#1F2937] ">
               NEXT EVENTS
             </span>
-            <span className="w-8 sm:w-12 h-[2px] bg-[#1F2937]" />
+            <span className="w-10 h-[2px] bg-[#1F2937]" />
           </div>
 
-          <h3 className="text-[22px] sm:text-[26px] lg:text-[32px] font-semibold text-[#1F2937] leading-tight">
+          <h3 className="text-[28px] sm:text-[26px] lg:text-[28px] font-bold text-[#1D2130] leading-tight">
             {title}
           </h3>
         </div>
       </div>
 
       {/* ARROW */}
-      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center shrink-0 self-start sm:self-auto">
-        <span className="text-[24px] sm:text-[28px] text-[#1F2937]">→</span>
+     
+      <div className="w-[56px] h-[56px] sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center shrink-0">
+        <Link href='/EventPage#Diary' className="!no-underline"> <span className="text-[24px] sm:text-[28px] text-[#1D2130]">→</span></Link>
       </div>
     </div>
   );

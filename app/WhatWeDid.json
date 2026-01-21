@@ -1,0 +1,201 @@
+{
+  "child-education-support": {
+    "title": "Child Education Support",
+    "tagline": "Ensuring every child has access to quality education and a brighter future.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO has been deeply committed to strengthening child education by addressing barriers such as poverty, lack of infrastructure, and limited access to quality learning resources. Over the years, we have supported children from marginalized communities by providing school enrollment assistance, learning materials, uniforms, and continuous academic guidance. Our programs emphasize not only literacy and numeracy but also creativity, moral values, and emotional well-being. Through community learning centers, remedial classes, and digital learning initiatives, we have helped children stay in school, improve academic performance, and develop confidence in their abilities. By working closely with parents, teachers, and local authorities, our NGO ensures that education becomes a sustainable pathway out of poverty for every child we serve.",
+    "sections": [
+      {
+        "title": "School Enrollment & Retention",
+        "content": "We actively support school enrollment drives and work to prevent dropouts by addressing financial and social challenges faced by families. Continuous follow-ups and parental engagement help ensure long-term retention."
+      },
+      {
+        "title": "Learning Resources",
+        "content": "Children receive textbooks, stationery, digital access, and age-appropriate learning tools that enhance understanding and curiosity."
+      },
+      {
+        "title": "Remedial Education",
+        "content": "Special classes help children who have fallen behind academically, ensuring no child is left behind due to learning gaps."
+      },
+      {
+        "title": "Holistic Child Development",
+        "content": "We integrate sports, arts, and life skills education to support emotional, social, and physical growth alongside academics."
+      }
+    ]
+  },
+
+  "women-skill-and-livelihood": {
+    "title": "Women Skill & Livelihood Development",
+    "tagline": "Building confidence, skills, and economic independence for women.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO has consistently worked to empower women by enabling access to skills, income opportunities, and leadership development. Through vocational training, self-help groups, and entrepreneurship support, we have helped women achieve financial independence and social confidence. These initiatives address systemic gender inequality by equipping women with market-relevant skills and decision-making capabilities. Our programs have transformed women into contributors to household income and community leadership, fostering dignity and self-reliance.",
+    "sections": [
+      {
+        "title": "Vocational Training",
+        "content": "We provide training in tailoring, handicrafts, food processing, digital skills, and other livelihood-oriented areas."
+      },
+      {
+        "title": "Self-Help Groups",
+        "content": "Women are organized into SHGs to promote savings, access credit, and strengthen collective economic power."
+      },
+      {
+        "title": "Entrepreneurship Support",
+        "content": "We guide women in starting small businesses through training, mentorship, and market linkages."
+      },
+      {
+        "title": "Confidence & Leadership",
+        "content": "Workshops focus on communication, legal awareness, and leadership skills to enhance social participation."
+      }
+    ]
+  },
+
+  "community-health-initiatives": {
+    "title": "Community Health Initiatives",
+    "tagline": "Improving health access and awareness for underserved communities.",
+    "image": "/WHATWEDO.png",
+    "des": "Our community health initiatives aim to reduce preventable illnesses and improve overall well-being among vulnerable populations. By organizing medical camps, health awareness drives, and sanitation programs, our NGO has strengthened healthcare access in areas with limited medical facilities. We focus on preventive care, early diagnosis, and health education to ensure long-term impact. These efforts have significantly improved health outcomes, especially for women, children, and elderly individuals.",
+    "sections": [
+      {
+        "title": "Medical Camps",
+        "content": "Free health checkups, diagnostics, and consultations are provided in remote and underserved areas."
+      },
+      {
+        "title": "Preventive Healthcare",
+        "content": "Awareness programs focus on hygiene, nutrition, maternal health, and disease prevention."
+      },
+      {
+        "title": "Sanitation & Hygiene",
+        "content": "We promote clean water access, sanitation practices, and community cleanliness drives."
+      },
+      {
+        "title": "Health Awareness",
+        "content": "Educational sessions empower communities to make informed health-related decisions."
+      }
+    ]
+  },
+
+  "youth-skill-development": {
+    "title": "Youth Skill Development",
+    "tagline": "Preparing youth for employment, entrepreneurship, and economic independence.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO has focused on equipping youth with practical skills that align with current job market needs. Through vocational training, digital literacy, and career guidance programs, we help young individuals transition from education to employment. These initiatives reduce unemployment and underemployment while fostering self-confidence and ambition among youth from disadvantaged backgrounds.",
+    "sections": [
+      {
+        "title": "Vocational Training",
+        "content": "Hands-on training programs prepare youth for trades and service-sector opportunities."
+      },
+      {
+        "title": "Digital Skills",
+        "content": "Training in basic computing, digital tools, and online platforms enhances employability."
+      },
+      {
+        "title": "Career Guidance",
+        "content": "Mentorship and counseling help youth identify suitable career paths and opportunities."
+      },
+      {
+        "title": "Employment Linkages",
+        "content": "We connect trained youth with employers, internships, and apprenticeship opportunities."
+      }
+    ]
+  },
+
+  "environment-sustainability": {
+    "title": "Environmental Sustainability",
+    "tagline": "Protecting nature through awareness, action, and community participation.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO actively promotes environmental sustainability by engaging communities in conservation and eco-friendly practices. Through tree plantation drives, waste management programs, and climate awareness initiatives, we encourage responsible interaction with nature. These efforts help build environmentally conscious communities committed to preserving natural resources for future generations.",
+    "sections": [
+      {
+        "title": "Tree Plantation",
+        "content": "Large-scale plantation drives improve green cover and environmental balance."
+      },
+      {
+        "title": "Waste Management",
+        "content": "Communities are trained in waste segregation, recycling, and reducing plastic use."
+      },
+      {
+        "title": "Climate Awareness",
+        "content": "Programs educate communities about climate change and sustainable living."
+      },
+      {
+        "title": "Community Participation",
+        "content": "Local involvement ensures long-term environmental impact and ownership."
+      }
+    ]
+  },
+
+  "disaster-response-and-recovery": {
+    "title": "Disaster Response & Recovery",
+    "tagline": "Standing with communities during emergencies and rebuilding lives.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO has played a critical role in disaster response by providing immediate relief and long-term recovery support. During natural and humanitarian crises, we mobilize resources quickly to deliver food, shelter, medical aid, and emotional support. Our rehabilitation efforts focus on restoring livelihoods and strengthening community resilience.",
+    "sections": [
+      {
+        "title": "Emergency Relief",
+        "content": "Rapid distribution of food, water, medicines, and essential supplies."
+      },
+      {
+        "title": "Shelter Support",
+        "content": "Temporary shelters and basic necessities for displaced families."
+      },
+      {
+        "title": "Rehabilitation",
+        "content": "Support for rebuilding homes, livelihoods, and community infrastructure."
+      },
+      {
+        "title": "Preparedness Training",
+        "content": "Awareness programs equip communities to handle future disasters."
+      }
+    ]
+  },
+
+  "elderly-care-support": {
+    "title": "Elderly Care Support",
+    "tagline": "Ensuring dignity, care, and companionship for senior citizens.",
+    "image": "/WHATWEDO.png",
+    "des": "Our NGO is dedicated to improving the quality of life for elderly individuals by addressing their physical, emotional, and social needs. Through healthcare support, companionship programs, and awareness initiatives, we help seniors live with dignity and respect. These efforts reduce isolation and promote healthy aging within communities.",
+    "sections": [
+      {
+        "title": "Health Support",
+        "content": "Medical assistance and regular health checkups for senior citizens."
+      },
+      {
+        "title": "Emotional Well-being",
+        "content": "Counseling and companionship programs reduce loneliness and stress."
+      },
+      {
+        "title": "Community Engagement",
+        "content": "Intergenerational activities strengthen social bonds and inclusion."
+      },
+      {
+        "title": "Awareness & Advocacy",
+        "content": "Programs promote respect, care, and rights of elderly individuals."
+      }
+    ]
+  },
+
+  "community-development": {
+    "title": "Community Development",
+    "tagline": "Strengthening communities through participation and sustainable growth.",
+    "image": "/WHATWEDO.png",
+    "des": "Community development lies at the heart of our NGO’s work. We focus on empowering communities to identify their needs, build local capacity, and drive their own development. Through infrastructure support, youth engagement, and participatory planning, we create resilient, self-reliant communities capable of sustaining long-term progress.",
+    "sections": [
+      {
+        "title": "Local Participation",
+        "content": "Communities actively participate in planning and decision-making processes."
+      },
+      {
+        "title": "Infrastructure Support",
+        "content": "Improved access to water, sanitation, education, and public facilities."
+      },
+      {
+        "title": "Youth & Volunteers",
+        "content": "Youth leadership and volunteer programs drive community initiatives."
+      },
+      {
+        "title": "Sustainable Growth",
+        "content": "Capacity building ensures long-term self-reliance and resilience."
+      }
+    ]
+  }
+}

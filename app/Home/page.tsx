@@ -10,7 +10,8 @@ import WhatWeDo from "./Components/section/WhatWeDo";
 export default function HomeContent(){
     return(
         <>
-        <Hero />
+      <div className="max-w-[1500px] mx-auto">
+          <Hero />
         <AboutSection />
         <WhatWeDo/>
         <ServicesGrid />
@@ -18,6 +19,7 @@ export default function HomeContent(){
         <DonationBreakdown />
         <ContributeBanner />
         <EventsSection />
+      </div>
 
         </>
     )

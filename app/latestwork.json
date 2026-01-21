@@ -1,0 +1,151 @@
+{
+  "emergency-relief-support": {
+    "title": "Emergency Relief Support",
+    "tagline": "Providing immediate assistance to communities during crises.",
+    "image": "/WHATWEDO.png",
+    "des": "In times of emergencies, our NGO responds quickly to support affected families with essential supplies and relief services, helping them cope and recover with dignity. During natural disasters, health emergencies, humanitarian crises, and unforeseen calamities, we focus on rapid response, compassionate care, and organized relief delivery. Our emergency relief efforts aim to reduce suffering, protect lives, and restore dignity for vulnerable individuals and families. By providing food, shelter, medical assistance, and essential resources, we ensure immediate stability during critical moments. Working closely with local authorities, grassroots volunteers, healthcare workers, and partner organizations, we ensure timely assistance, transparency, and effective coordination. These efforts support not only immediate survival but also early recovery, resilience building, and preparedness for future emergencies.",
+    "sections": [
+      {
+        "title": "Essential Supply Distribution",
+        "content": "Food kits, clean drinking water, clothing, blankets, and hygiene supplies are distributed promptly to affected families facing emergencies. These essential relief materials address immediate survival needs, prevent disease outbreaks, and ensure basic comfort and dignity during crisis situations. Distribution is conducted systematically to reach the most vulnerable populations first."
+      },
+      {
+        "title": "Rapid Response Teams",
+        "content": "Volunteers and trained staff mobilize quickly to reach affected areas, assess urgent needs, and organize relief operations efficiently. Rapid response teams ensure timely action, effective logistics management, and coordinated service delivery even in remote or high-risk environments."
+      },
+      {
+        "title": "Temporary Assistance",
+        "content": "Immediate support such as temporary shelters, emergency healthcare, psychosocial support, and short-term aid helps families stabilize during crisis periods. This temporary assistance reduces distress, ensures safety, and provides a secure environment while long-term recovery strategies are developed."
+      },
+      {
+        "title": "Recovery Coordination",
+        "content": "We collaborate with local authorities, healthcare providers, community leaders, and partner organizations to support rehabilitation and recovery efforts. Coordinated actions help communities rebuild livelihoods, restore essential services, strengthen disaster preparedness, and enhance long-term resilience."
+      }
+    ]
+  },
+
+  "digital-literacy-for-youth": {
+    "title": "Digital Literacy for Youth",
+    "tagline": "Equipping young minds with digital skills for a technology-driven future.",
+    "image": "/WHATWEDO.png",
+    "des": "This initiative focuses on bridging the digital divide by providing youth with essential computer education and digital literacy skills. Our programs empower young individuals with practical digital knowledge that supports education, employment, and entrepreneurship opportunities. By improving access to technology, digital tools, and structured training, we help youth build confidence, enhance employability, and participate actively in the modern digital economy. The program prepares young people for long-term success, lifelong learning, and adaptability in a rapidly evolving, technology-driven world.",
+    "sections": [
+      {
+        "title": "Basic Computer Training",
+        "content": "Youth are trained in computer fundamentals, keyboard skills, typing accuracy, and commonly used software applications. This foundational digital training enables participants to confidently use technology for education, professional tasks, online learning, and personal development."
+      },
+      {
+        "title": "Internet & Online Safety",
+        "content": "Sessions educate participants on safe internet usage, digital platforms, cyber security, online fraud prevention, and responsible digital behavior. Youth learn how to protect personal data, maintain online privacy, and use the internet safely."
+      },
+      {
+        "title": "Job-Oriented Skills",
+        "content": "Training includes resume creation, email communication, use of online job portals, interview preparation, and basic professional etiquette. These job-oriented digital skills significantly improve career readiness and employment opportunities."
+      },
+      {
+        "title": "Certification & Assessment",
+        "content": "Participants are evaluated through assessments and practical tests to measure digital proficiency. Upon completion, certificates are awarded, boosting confidence and enhancing employability in both formal and informal job markets."
+      }
+    ]
+  },
+
+  "women-health-awareness-drive": {
+    "title": "Women Health Awareness Drive",
+    "tagline": "Promoting preventive healthcare and well-being among women.",
+    "image": "/WHATWEDO.png",
+    "des": "Our Women Health Awareness Drive educates women about preventive healthcare, reproductive health, maternal care, nutrition, and mental well-being. The initiative focuses on improving health awareness, reducing preventable diseases, and encouraging early diagnosis and timely medical intervention. Through workshops, screenings, counseling, and community outreach, we empower women with knowledge to make informed health decisions, adopt healthy practices, and improve their overall quality of life.",
+    "sections": [
+      {
+        "title": "Health Education Workshops",
+        "content": "Interactive workshops focus on reproductive health, menstrual hygiene management, maternal health, nutrition, and lifestyle-related diseases. These sessions provide accurate information, dispel myths, and encourage healthy behavior among women and adolescent girls."
+      },
+      {
+        "title": "Preventive Screenings",
+        "content": "Basic health screenings help in early detection of common health issues such as anemia, blood pressure, and diabetes. Preventive screenings promote early treatment, reduce health risks, and improve long-term health outcomes."
+      },
+      {
+        "title": "Mental Well-being Support",
+        "content": "Counseling sessions address stress management, emotional health, anxiety, and self-care practices. Mental well-being support helps women build emotional resilience, confidence, and coping skills for daily life challenges."
+      },
+      {
+        "title": "Community Outreach",
+        "content": "Door-to-door awareness programs, group discussions, and local meetings ensure wider community participation. Outreach activities spread health awareness beyond workshops and encourage collective responsibility for women’s health."
+      }
+    ]
+  },
+
+  "school-infrastructure-support": {
+    "title": "School Infrastructure Support",
+    "tagline": "Creating safe and supportive learning environments for children.",
+    "image": "/WHATWEDO.png",
+    "des": "This project focuses on improving basic infrastructure in government and community schools serving underprivileged children. By enhancing classrooms, sanitation facilities, drinking water access, and learning environments, we create conditions conducive to quality education. Improved infrastructure supports student safety, physical health, attendance, and overall learning outcomes, enabling children to learn with dignity and confidence.",
+    "sections": [
+      {
+        "title": "Classroom Improvements",
+        "content": "Renovation of classrooms with proper seating, lighting, ventilation, blackboards, and learning aids improves the overall teaching-learning experience. Better classroom environments encourage student engagement, concentration, and academic performance."
+      },
+      {
+        "title": "Sanitation Facilities",
+        "content": "Construction and repair of clean, safe, and functional toilet facilities promote hygiene, dignity, and health. Improved sanitation particularly supports attendance and comfort of adolescent girls."
+      },
+      {
+        "title": "Drinking Water Access",
+        "content": "Installation of safe drinking water facilities ensures students and staff have consistent access to clean water. Access to potable water reduces health risks and supports overall student well-being."
+      },
+      {
+        "title": "Community Participation",
+        "content": "Parents, teachers, and local volunteers are actively engaged to support maintenance and sustainability of school facilities. Community involvement ensures ownership, accountability, and long-term impact."
+      }
+    ]
+  },
+
+  "livelihood-support-for-families": {
+    "title": "Livelihood Support for Families",
+    "tagline": "Strengthening household income through sustainable livelihood opportunities.",
+    "image": "/WHATWEDO.png",
+    "des": "Our livelihood support program helps vulnerable families improve income stability through skill training, resource assistance, and guidance for small-scale economic activities. By strengthening livelihoods, we aim to reduce poverty, promote self-reliance, enhance financial security, and improve overall living standards for families facing economic hardship.",
+    "sections": [
+      {
+        "title": "Skill-Based Training",
+        "content": "Families receive hands-on training in income-generating skills aligned with local market demand. Skill development increases productivity, income potential, and long-term economic sustainability."
+      },
+      {
+        "title": "Resource Assistance",
+        "content": "Basic tools, equipment, and materials are provided to help families start or expand livelihood activities. Resource support reduces financial barriers and encourages entrepreneurship."
+      },
+      {
+        "title": "Financial Awareness",
+        "content": "Sessions on savings habits, budgeting techniques, credit management, and basic financial planning strengthen financial literacy. Improved financial awareness supports economic stability and resilience."
+      },
+      {
+        "title": "Market Linkages",
+        "content": "Support is provided to connect beneficiaries with local buyers, cooperatives, and markets. Market access ensures regular income flow and sustainability of livelihood activities."
+      }
+    ]
+  },
+
+  "environment-cleanup-campaign": {
+    "title": "Environment Cleanup Campaign",
+    "tagline": "Mobilizing communities to protect and preserve their surroundings.",
+    "image": "/WHATWEDO.png",
+    "des": "The Environment Cleanup Campaign actively engages volunteers, youth groups, and local residents in cleaning public spaces, promoting waste segregation, and encouraging environmentally responsible behavior. The initiative aims to improve public health, reduce pollution, enhance cleanliness, and build a strong culture of environmental responsibility through consistent community participation.",
+    "sections": [
+      {
+        "title": "Community Clean Drives",
+        "content": "Regular cleanup activities are conducted in streets, parks, schools, and public spaces. These clean drives help reduce waste accumulation, improve sanitation, and enhance the visual appeal of communities."
+      },
+      {
+        "title": "Waste Segregation Awareness",
+        "content": "Training on separating wet and dry waste promotes responsible waste disposal, recycling, and composting practices. Waste segregation awareness reduces landfill burden and environmental pollution."
+      },
+      {
+        "title": "Volunteer Engagement",
+        "content": "Youth volunteers, community members, and local organizations actively participate in environmental action initiatives. Volunteer engagement strengthens collective responsibility and environmental stewardship."
+      },
+      {
+        "title": "Sustainability Education",
+        "content": "Awareness sessions highlight long-term environmental responsibility, climate consciousness, and eco-friendly daily habits. Sustainability education encourages behavioral change for the benefit of future generations."
+      }
+    ]
+  }
+}

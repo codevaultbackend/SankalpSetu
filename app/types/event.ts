@@ -8,13 +8,15 @@ export interface Event {
   createdAt?: string;
   updatedAt?: string;
 }
-export interface EventItem {
+
+export type EventItem = {
   _id: string;
   nameofevent: string;
-  when: string;
   Place: string;
+  title: string;
   description_of_event: string;
-}
+  eventDate: string; 
+};
 
 export interface GetEventsResponse {
   success: boolean;

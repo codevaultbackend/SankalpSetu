@@ -1,89 +1,72 @@
+"use client";
+
+import Link from "next/link";
 import Image from "next/image";
-
-type Service = {
-  title: string;
-  description: string;
-  image: string;
-};
-
-const services: Service[] = [
-  {
-    title: "UI/UX",
-    description:
-      "Our team of experienced and certified UI/UX designers will work with you to create a design that is both visually appealing and easy to use. We will also conduct user testing to ensure that your design is user-friendly and meets the needs of your target audience.",
-    image: "/WHATWEDO.png",
-  },
-  {
-    title: "SEO",
-    description:
-      "D.CAL SEO service is designed to help you improve your website’s visibility in search engine results pages (SERPs), so that you can reach more potential customers and grow your business.",
-    image: "/WHATWEDO.png",
-  },
-  {
-    title: "CONTENT",
-    description:
-      "We believe that content is a powerful tool that can help businesses achieve their marketing and communication goals.",
-    image: "/WHATWEDO.png",
-  },
-];
+import { useServices } from "@/app/context/ServicesContext";
 
 export default function WhatWeDo() {
+  const { services } = useServices();
+
+  const visibleServices = Object.entries(services).slice(0, 3);
+
   return (
-    <section className="bg-white pb-20 sm:pb-24 lg:pb-32">
+    <section className="bg-white sm:pb-24  pb-0 relative">
+      {/* Background Decoration */}
+      <img
+        src="/CircularArrow.png"
+        alt="CircularArrow"
+        className="absolute max-[600px]:h-[105px] max-[600px]:w-[151px] max-[600px]:top-[-32px] h-[317px] w-[450px] right-0 -top-[8%]"
+      />
+
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
-
         {/* HEADER */}
-        <div className="mb-16 sm:mb-20 lg:mb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="mb-16 sm:mb-20 lg:mb-[130px] max-[600px]:mb-[34px] grid grid-cols-1 lg:grid-cols-2 gap-12 max-[600px]:gap-0 lg:gap-20 items-start">
           <div>
-            <p className="text-[18px] sm:text-[21px] font-medium tracking-[0.2em] text-black/40 uppercase mb-4">
-              Our services
-            </p>
-
-            <h2 className="text-[32px] sm:text-[38px] lg:text-[44px] font-bold tracking-[0.2em] mb-6 flex flex-wrap gap-2 items-center">
-              WHAT WE DO ?
+            <h2 className="text-[48px] max-[600px]:!text-[24px]   sm:text-[38px] lg:text-[44px] font-[700] tracking-[0.21em] mb-6 flex flex-wrap gap-2 items-center max-[600px]:!mt-[40px] max-[600px]:tracking-[0.11em] ">
+              WHAT WE DO ? 
               <span className="h-[1.5px] w-[80px] sm:w-[100px] bg-black"></span>
             </h2>
 
             <p className="text-[13px] font-semibold leading-[150%] text-black/70 max-w-md">
-              At D.CAL, we believe that digital marketing is essential for any
-              business that wants to succeed in today's competitive online
-              landscape.
+              At Sankalp Setu Foundation, we create meaningful change in
+              Education and Healthcare for underserved communities in India.
             </p>
           </div>
 
           <div className="max-w-md lg:mt-auto lg:mb-[15px]">
-            <p className="text-[14px] sm:text-[15px] leading-[150%] font-medium text-black/70 mb-6">
-              That’s why we offer a wide range of digital marketing services,
-              including UI/UX design, content marketing, SEO, and more.
+            <p className="text-[16px] sm:text-[15px] leading-[150%] font-[500] text-black/70 mb-6">
+              We believe in sustainable solutions over temporary fixes.
             </p>
-
-            <button className="text-[14px] font-bold tracking-[0.1em] uppercase">
-              FREE GUIDE
-              <span className="h-[1px] bg-black block w-[50%] mr-auto mt-1"></span>
-            </button>
+            <Link
+              href="/what-we-do#ourimpactAreas"
+              scroll={true}
+              className="!no-underline !text-black"
+            >
+              <button className="text-[14px] font-bold tracking-[0.1em] uppercase">
+                FREE GUIDE
+                <span className="h-[1px] bg-black block w-[50%] mr-auto mt-1"></span>
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* ================= SERVICES ================= */}
-        <div className="flex flex-col gap-24 sm:gap-28 lg:gap-36 max-w-[1043px] mx-auto">
-          {services.map((service, index) => {
-            const isEven = index % 2 === 1;
+        {/* SERVICES */}
+        <div className="flex flex-col gap-24 max-[600px]:gap-10 sm:gap-28 lg:gap-[137px] max-w-[1043px] mx-auto">
+          {visibleServices.map(([slug, service], index) => {
+            const isEven = index % 2 !== 0;
 
             return (
               <div
-                key={service.title}
-                className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-24 items-center"
+                key={slug}
+                className={`flex flex-col lg:flex-row items-center !gap-[126px] max-[600px]:!gap-8 lg:gap-24 ${
+                  isEven ? "lg:flex-row-reverse" : ""
+                }`}
               >
                 {/* IMAGE */}
-                <div
-                  className={`relative w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px] mx-auto lg:mx-0 ${
-                    isEven ? "lg:order-2" : "lg:order-1"
-                  }`}
-                >
-                  {/* Accent block */}
+                <div className="relative w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px]">
                   <div
-                    className={`absolute ${
-                      isEven ? "-right-4 top-4" : "-left-4 top-4"
+                    className={`absolute top-4 ${
+                      isEven ? "-right-4" : "-left-4"
                     } w-full h-full bg-[#A6F77B]`}
                   />
 
@@ -98,25 +81,35 @@ export default function WhatWeDo() {
                 </div>
 
                 {/* CONTENT */}
-                <div
-                  className={`max-w-md text-center lg:text-left mx-auto lg:mx-0 ${
-                    isEven ? "lg:order-1" : "lg:order-2"
-                  }`}
-                >
-                  <h3 className="text-[24px] sm:text-[26px] lg:text-[28px] font-semibold mb-6 tracking-tight">
-                    {service.title}
-                    <span className="ml-2 text-black/10">
+                <div className="max-w-md text-center lg:!text-left">
+                  <h3 className="relative mb-6 font-semibold !text-[40px] !leading-[130%] max-[600px]:!text-[22px] max-[600px]:!my-[3px] max-[600px]:!mb-[8px]  lg:text-[28px] flex flex-wrap gap-1">
+                    {/* Outline / Shadow Text */}
+
+                    {/* Main Visible Text */}
+                    
+                    <span
+                      aria-hidden
+                      className=" pointer-events-none select-none max-[600px]:!mx-auto !tracking-[0.06em]"
+                      style={{
+                        WebkitTextStroke: "1px #535353",
+                        color: "transparent",
+                      }}
+                    >
                       {service.title}
                     </span>
                   </h3>
 
-                  <p className="text-[14px] leading-[1.7] text-black/70 mb-8">
-                    {service.description}
+                  <p className="text-[16px] leading-[150%] text-black/70 mb-8  font-[500] line-clamp-7">
+                    {service.des}
                   </p>
 
-                  <button className="w-[44px] h-[44px] -rotate-[48deg] rounded-full text-[20px] border border-black flex items-center justify-center mx-auto lg:mx-0">
+                  <Link
+                    href="/what-we-do#ourimpactAreas"
+                    scroll={true}
+                    className="w-[44px] h-[44px] -rotate-[48deg] !text-[#151414] rounded-full border border-black flex items-center justify-center mx-auto lg:!mx-0 !no-underline"
+                  >
                     →
-                  </button>
+                  </Link>
                 </div>
               </div>
             );

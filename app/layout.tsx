@@ -1,9 +1,7 @@
 import Footer from "./Components/layout/Footer";
 import Navbar from "./Components/layout/Navbar";
-import "@fortawesome/fontawesome-svg-core/styles.css"; 
-
+import { ServicesProvider } from "./context/ServicesContext";
 import "./globals.css";
-
 
 export default function RootLayout({
   children,
@@ -12,10 +10,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+      </head>
+
+      <body className="max-w-[1440px] mx-auto">
+        <ServicesProvider>
+          <Navbar />
+          {children}
+
+          <Footer />
+        </ServicesProvider>
       </body>
     </html>
   );

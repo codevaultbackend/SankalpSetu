@@ -1,94 +1,153 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-28">
-      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <section className="bg-white py-16 lg:py-28 max-[600px]:py-10">
+      <div className="mx-auto max-w-[1280px] px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 max-[600px]:gap-8 items-center !mt-[78px] max-[600px]:!mt-[0px]">
+        {/* ================= IMAGE COLLAGE ================= */}
+        <div className="flex justify-center">
+          {/* SCALE WRAPPER */}
+          <div
+            className="
+              relative
+              w-[320px] h-[320px]
+              sm:w-[420px] sm:h-[420px]
+              lg:w-[560px] lg:h-[560px]
+            "
+          >
+            {/* inner fixed design */}
+            <div className="absolute inset-0 scale-[0.57] sm:scale-[0.75] lg:scale-100 origin-top-left">
+              <div className="relative w-[560px] h-[560px]">
+                {/* Top Left */}
+                <div className="absolute left-0 top-0 w-[220px] h-[220px] overflow-hidden ">
+                  <Image src="/img1.png" fill className="object-cover" alt="" />
+                </div>
 
+                {/* Top Center */}
+                <div className="absolute left-[260px] top-[40px] w-[76px] h-[76px] overflow-hidden">
+                  <Image
+                    src="/gallery1.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
 
-        <div className="relative mx-auto w-[300px] h-[300px] sm:w-[420px] sm:h-[420px] lg:w-[520px] lg:h-[520px]">
+                {/* Top Right */}
+                <div className="absolute right-[20px] top-0 w-[106px] h-[106px] overflow-hidden">
+                  <Image
+                    src="/gallery3.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
 
-          {/* Top-left */}
-          <div className="absolute left-0 top-0 w-[130px] h-[130px] sm:w-[180px] sm:h-[180px] lg:w-[220px] lg:h-[220px] overflow-hidden rounded-tl-[60px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
+                {/* Mid Left */}
+                <div className="absolute left-[106px] top-[260px] w-[114px] h-[114px] overflow-hidden">
+                  <Image
+                    src="/gallery4.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
+
+                {/* Center Large */}
+                <div className="absolute left-[276px] top-[145px] w-[182px] h-[182px] overflow-hidden">
+                  <Image
+                    src="/gallery3.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
+
+                {/* Bottom Left */}
+                <div className="absolute left-0 bottom-0 w-[160px] h-[160px] overflow-hidden">
+                  <Image
+                    src="/gallery5.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
+
+                {/* Bottom Center */}
+                <div className="absolute left-[200px] bottom-[30px] w-[120px] h-[120px] overflow-hidden">
+                  <Image
+                    src="/gallery6.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
+
+                {/* Bottom Right */}
+                <div className="absolute right-0 max-[600px]:right-[-10px] bottom-[10px] w-[200px] h-[200px] overflow-hidden">
+                  <Image
+                    src="/gallery7.png"
+                    fill
+                    className="object-cover"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* Top small */}
-          <div className="absolute left-[140px] top-[20px] sm:left-[200px] sm:top-[30px] lg:left-[240px] lg:top-[40px] w-[50px] h-[50px] sm:w-[64px] sm:h-[64px] lg:w-[76px] lg:h-[76px] overflow-hidden rounded-[20px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
-          {/* Top-right */}
-          <div className="absolute right-0 top-0 w-[100px] h-[120px] sm:w-[130px] sm:h-[150px] lg:w-[150px] lg:h-[180px] overflow-hidden rounded-tr-[60px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
-          {/* Center */}
-          <div className="absolute left-[90px] top-[90px] sm:left-[130px] sm:top-[130px] lg:left-[160px] lg:top-[160px] w-[110px] h-[110px] sm:w-[150px] sm:h-[150px] lg:w-[182px] lg:h-[182px] overflow-hidden rounded-l-[100px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
-          {/* Bottom-left */}
-          <div className="absolute left-0 bottom-0 w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] lg:w-[160px] lg:h-[160px] overflow-hidden rounded-bl-[60px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
-          {/* Bottom-center */}
-          <div className="absolute left-[110px] bottom-[10px] sm:left-[150px] sm:bottom-[15px] lg:left-[180px] lg:bottom-[20px] w-[90px] h-[90px] sm:w-[110px] sm:h-[110px] lg:w-[130px] lg:h-[130px] overflow-hidden">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
-          {/* Bottom-right */}
-          <div className="absolute -right-[6px] bottom-[20px] sm:-right-[8px] sm:bottom-[30px] lg:-right-[10px] lg:bottom-[40px] w-[110px] h-[110px] sm:w-[140px] sm:h-[140px] lg:w-[166px] lg:h-[166px] overflow-hidden rounded-r-[100px]">
-            <Image src="/img1.png" fill className="object-cover" alt="" />
-          </div>
-
         </div>
 
         {/* ================= CONTENT ================= */}
-        <div className="flex flex-col gap-8 lg:gap-10 max-w-full lg:max-w-[560px]">
-
+        <div className="max-w-[560px] flex flex-col gap-10 max-[600px]:!gap-1 text-center lg:!text-left">
           <div>
-            <h2 className="text-[36px] sm:text-[48px] lg:!text-[72px] font-semibold leading-[1.05] mb-4 lg:mb-6 text-black">
+            <h2 className="text-[42px] sm:text-[56px] lg:!text-[72px] font-semibold leading-[100%] mb-[19px] text-black">
               About us
             </h2>
 
-            <p className="text-[15px] sm:text-[16px] leading-[1.45] text-black">
-              Welcome to the National Hookah Community Association "NHCA".
-              We are a diverse alliance of businesses from all ends of the
-              Hookah experience, from manufacturers and importers of molasses,
-              pipes and accessories to distributors, Hookah lounges and
-              Hookah/shisha retail stores.
+            <p className="text-[18px] !mb-[44px] sm:text-[18px] font-[400] leading-[135%] text-[#000000] mt-[11px] ">
+              Building Bridges. Transforming Lives. Welcome to Sankalp Setu
+              Foundation – a grassroots social organization dedicated to
+              creating real change in Education and Healthcare across India. The
+              word "Setu" means bridge – and that's exactly what we do. We
+              bridge the gap between need and support, dreams and reality,
+              connecting underserved communities with the opportunities they
+              deserve.
             </p>
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4 lg:gap-6">
-            {["Join us", "Donate", "Join as volunteer"].map((text) => (
-              <button
-                key={text}
-                className="
-                  h-[46px]
-                  px-6 sm:px-8
-                  rounded-full
-                  text-[15px] sm:text-[16px]
-                  font-medium
-                  border
-                  border-black
-                  bg-[#F4F4F4]
-                  text-black
-                  hover:bg-black
-                  hover:text-[#F4F4F4]
-                  transition
-                "
-              >
-                {text}
-              </button>
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            {[
+              { text: "Join As Volunteer", href: "/volunteer" },
+              { text: "Donate", href: "/ContactUs" },
+              { text: "Join As NGO", href: "/ngo-registration" },
+            ].map((item, index) => (
+              <Link key={index} href={item.href} className=" !no-underline">
+                <button
+                  className={`
+        h-[52px] sm:!h-[54px]
+        w-[150px] sm:!w-[154px]
+        !rounded-full
+        text-[16px]
+        max-[600px]:!text-[14px]
+        font-medium
+        border border-black
+        bg-[#F4F4F4]
+        text-black
+        
+        hover:bg-black hover:!text-[#F4F4F4]
+        ${index === 0 && "bg-black text-white"}
+        transition
+      `}
+                >
+                  {item.text}
+                </button>
+              </Link>
             ))}
           </div>
 
-          {/* Divider */}
-          <div className="h-px w-full bg-black/20" />
+          <div className="h-px w-full bg-black/20 max-[600px]:hidden" />
         </div>
       </div>
     </section>
