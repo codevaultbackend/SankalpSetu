@@ -94,7 +94,7 @@ export default function DonationBreakdown() {
               {/* CENTER TEXT */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-black">
-                  $85k
+                  ₹85k
                 </span>
               </div>
             </div>

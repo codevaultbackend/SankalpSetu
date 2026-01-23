@@ -12,11 +12,11 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-[140px] grid grid-cols-1 lg:grid-cols-2 gap-10 max-[600px]:gap-1 max-[600px]:flex-col-reverse max-[600px]:flex max-[600px]:py-[29px] ">
         {/* -------- LEFT TEXT -------- */}
         <div>
-          <span className="inline-block mb-5 px-5 py-2 rounded-full bg-[#a9b78a] text-sm font-medium text-[#3f4f1f]">
+          <span className="inline-block mb-5 max-[600px]:!mb-3 px-5 py-2 rounded-full bg-[#a9b78a] text-sm font-medium text-[#3f4f1f]">
             Learning Today, Leading Tomorrow
           </span>
 
-          <h1 className="text-[40px] max-[600px]:!text-[22px] leading-tight font-semibold text-[#4a3b08] max-w-xl">
+          <h1 className="text-[40px] max-[600px]:!text-[20px] leading-tight font-semibold text-[#4a3b08] max-w-xl">
             “Empowering Every Child With <br />
             The Gift Of Knowledge.”
           </h1>
@@ -30,14 +30,14 @@ export default function Hero() {
           <div className="mt-10 flex items-center gap-5">
             <Link
               href="/volunteer"
-              className="rounded-full bg-[#5f7a3b] px-7 py-3 text-white text-sm font-medium shadow hover:bg-[#4f682f] !no-underline"
+              className="rounded-full bg-[#5f7a3b] px-7 py-3 text-white text-sm font-medium shadow hover:bg-[#4f682f] !no-underline max-[600px]:!text-[13px] max-[600px]:px-3"
             >
               Join as volunteer
             </Link>
 
             <Link
               href="/ContactUs"
-              className="rounded-full bg-[#7f9a52] px-7 py-3 text-white text-sm font-medium shadow hover:bg-[#6b8346] !no-underline"
+              className="rounded-full bg-[#7f9a52] px-7 py-3 text-white text-sm font-medium shadow hover:bg-[#6b8346] !no-underline max-[600px]:!text-[14px] max-[600px]:px-5"
             >
               Donate Us
             </Link>

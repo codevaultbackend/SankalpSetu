@@ -1,11 +1,12 @@
 import Hero from "../Components/layout/Hero";
 import DiaryBook from "./Component/DiaryBook";
+import EventHero from "./Component/EventHero";
 import EventsCrousel from "./Component/EventsCrousel";
 
 export default function Page() {
   return (
     <main className="min-h-screen relative overflow-hidden">
-      <Hero />
+      <EventHero />
       <DiaryBook />
 
       {/* Normal layout, starts from slide 1 */}

@@ -3,18 +3,15 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useServices } from "@/app/context/ServicesContext";
-import { use } from "react";
 import Link from "next/link";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string }; // ✅ not a Promise
 };
 
 export default function LatestWorkDetailPage({ params }: Props) {
-  // Resolve the slug promise
-  const resolvedParams = use(params);
   const { getLatestWorkBySlug } = useServices();
-  const work = getLatestWorkBySlug(resolvedParams.slug);
+  const work = getLatestWorkBySlug(params.slug); // ✅ directly use params.slug
 
   if (!work) return notFound();
 

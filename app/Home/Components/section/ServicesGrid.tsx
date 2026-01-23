@@ -53,7 +53,7 @@ export default function ServicesGrid() {
 
               {/* Content */}
               <div className="px-5 sm:!px-6 sm:!py-6 max-[600px]:py-6">
-                <h3 className="text-[18px] sm:!text-[17px] font-[400] mb-3 !text-black">
+                <h3 className="text-[18px] sm:!text-[17px] font-[400] mb-3 !text-black line-clamp-2">
                   {card.title}
                 </h3>
 

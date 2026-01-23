@@ -3,15 +3,14 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useServices } from "@/app/context/ServicesContext";
-import { use } from "react";
 import Link from "next/link";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string }; // <- fixed: remove Promise
 };
 
 export default function WhatWeDidDetailPage({ params }: Props) {
-  const resolvedParams = use(params);
+  const resolvedParams = params; // <- fixed: no use() here
   const { getWhatWeDidBySlug } = useServices();
   const project = getWhatWeDidBySlug(resolvedParams.slug);
 

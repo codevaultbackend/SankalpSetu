@@ -38,18 +38,17 @@ export default function NewsSection() {
         {/* Grid */}
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-[600px]:justify-center">
           {newsData.map((item, index) => (
-            <article key={index} className="w-[290px] h-[328px]">
+            <article key={index} className="w-[290px] h-[328px] max-[600px]:!mb-[40px]">
               <div className="relative mb-6 h-[192px] w-full overflow-hidden !rounded-xl">
                 <img src={item.image} alt="" />
               </div>
 
-              <h3 className="mb-3 text-[20px] leading-[150%] font-semibold text-slate-900">
+              <h3 className="mb-3 text-[20px] leading-[150%] font-semibold text-slate-900 line-clamp-2">
                 {item.title}
               </h3>
 
               <p className="text-[16px]  leading-[160%] text-slate-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim
+                {item.des}
               </p>
             </article>
           ))}

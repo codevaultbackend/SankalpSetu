@@ -48,7 +48,7 @@ export default function HeroSection() {
 function Card95() {
   return (
     <div className="h-[400px] rounded-[40px] mt-[12px] overflow-hidden">
-      <img src="/hero1.png" alt="" className="w-full h-full object-cover" />
+      <img src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769089201/ss_page_assets/n2qkiqi4w1vsrloigdz4.png" alt="" className="w-full h-full object-cover" />
     </div>
   );
 }
@@ -56,7 +56,7 @@ function Card95() {
 function EducationCard() {
   return (
     <div className="relative h-[360px] mt-[12px] rounded-[40px] overflow-hidden">
-      <Image src="/hero5.png" fill alt="" className="object-cover" />
+      <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769089223/ss_page_assets/pdj9wx0oygwbgeekysza.png" fill alt="Meternity Programs" className="object-cover" />
     </div>
   );
 }
@@ -64,7 +64,7 @@ function EducationCard() {
 function MedicationCard() {
   return (
     <div className="relative h-[360px] mt-[12px] rounded-[40px] overflow-hidden">
-      <Image src="/hero4.png" fill alt="" className="" />
+      <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769089212/ss_page_assets/yikgr1anqgi0eh3zuyop.png" fill alt="" className="" />
     </div>
   );
 }
@@ -72,7 +72,7 @@ function MedicationCard() {
 function DonateCard() {
   return (
     <div className="h-[220px] mt-[12px] rounded-[40px] overflow-hidden">
-      <img src="/hero7.png" alt="" className="w-full h-full " />
+      <img src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/twtiedy19vcpvfjbanee.png" alt="" className="w-full h-full " />
     </div>
   );
 }
@@ -80,7 +80,7 @@ function DonateCard() {
 function GalleryBig() {
   return (
     <div className="h-[420px] mt-[12px] rounded-[40px] overflow-hidden">
-      <img src="/hero6.png" alt="" className="w-full h-full " />
+      <img src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769165864/Frame_414_tjoala.png" alt="" className="w-full h-full " />
     </div>
   );
 }

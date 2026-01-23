@@ -117,7 +117,7 @@ export default function AboutSection() {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+          <div className="flex flex-wrap gap-4 max-[600px]:!gap-1 max-[600px]:!gap-y-3 justify-center lg:justify-start">
             {[
               { text: "Join As Volunteer", href: "/volunteer" },
               { text: "Donate", href: "/ContactUs" },
@@ -126,11 +126,11 @@ export default function AboutSection() {
               <Link key={index} href={item.href} className=" !no-underline">
                 <button
                   className={`
-        h-[52px] sm:!h-[54px]
-        w-[150px] sm:!w-[154px]
+        h-[52px] max-[600px]:!h-[50px]
+        w-[155px] max-[600px]:!w-[114px]
         !rounded-full
-        text-[16px]
-        max-[600px]:!text-[14px]
+        !text-[12px]
+        max-[600px]:!text-[10px]
         font-medium
         border border-black
         bg-[#F4F4F4]

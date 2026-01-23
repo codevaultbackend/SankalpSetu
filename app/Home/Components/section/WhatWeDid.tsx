@@ -46,12 +46,12 @@ export default function WhatWeDid() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((item) => (
             <div key={item.slug} className="relative z-[9999] max-[800px]:max-w-[420px] max-[800px]:mx-auto">
-              <div className="relative h-[430px] !max-w-[420px] w-full max-[420px]:w-fit ">
+              <div className="relative h-[430px] !max-w-[420px] w-full  ">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover"
+                  className="object-cover max-[600px]:!w-fit max-[600px]:h-[430px] max-[600px]:max-w-auto"
                 />
               </div>
 
@@ -80,7 +80,7 @@ export default function WhatWeDid() {
       {/* Quote Section */}
       <div className="pb-[10px] text-white relative z-[9999]">
         <div className="max-w-[900px] mx-auto text-center px-6">
-          <p className="text-[26px] leading-[190%] font-[700] mb-12 max-[600px]:text-[21px]">
+          <p className="text-[26px] leading-[190%] font-[700] mb-12 max-[600px]:!text-[16px]">
             "WE BELIEVE EVERY YOUNG PERSON DESERVES A CHANCE TO SUCCEED. AT
             SANKALP SETU, WE'RE NOT JUST TEACHING SKILLS—WE'RE BUILDING
             CONFIDENCE, CREATING OPPORTUNITIES, AND EMPOWERING COMMUNITIES TO
