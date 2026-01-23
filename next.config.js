@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true, // optional but recommended
   images: {
     // Keep domains only if you still need them
     domains: ["images.pexels.com"],
@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
 
-      // ✅ Cloudinary (REQUIRED for your error)
+      // ✅ Cloudinary
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
@@ -23,4 +23,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
