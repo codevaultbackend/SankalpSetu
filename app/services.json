@@ -3,7 +3,7 @@
     "title": "Education for Children",
     "tagline": "Empowering the next generation through quality learning.",
     "des": "Education for children is a pivotal journey that opens doors to endless possibilities, nurturing not just their intellect but also their character and emotional intelligence. Within this realm, the keyword holistic approach becomes essential; it underscores the importance of addressing various dimensions of development—cognitive, social, emotional, and physical. When we adopt a holistic approach in education for children, we encourage curiosity and creativity alongside academic achievement. This method integrates traditional subjects with life skills such as collaboration and empathy, fostering an environment where young learners are excited to explore diverse topics through interactive activities and real-world experiences. By prioritizing the holistic development of each child, educators can create an inclusive atmosphere that celebrates individuality while instilling the values necessary for thriving in an interconnected world.",
-    "image": "/WHATWEDO.png",
+    "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085325/ss_page_assets/wgneifrxfj4ti3i4zrt6.png",
     "sections": [
       {
         "title": "Access to Learning",
@@ -28,7 +28,7 @@
     "title": "Old Age Care",
     "tagline": "Providing dignity and support for our senior citizens.",
     "des": "In the evolving landscape of elder care, SankalpSetu emerges as a beacon of hope and innovation, emphasizing the importance of compassion, respect, and dignity in nurturing our senior citizens. This initiative serves as a bridge—connecting families with essential resources that cater to the physical, emotional, and social needs of older adults. SankalpSetu not only facilitates access to qualified caregivers trained in geriatric care but also promotes educational programs aimed at spreading awareness about age-related challenges and the significance of mental health for seniors.",
-    "image": "/WHATWEDO.png",
+    "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085328/ss_page_assets/mo90wvd4grn3y3tzolsd.png",
     "sections": [
       {
         "title": "Health & Well-being",
@@ -53,7 +53,7 @@
   "title": "Healthcare Programs",
   "tagline": "Accessible, affordable, and compassionate healthcare for underserved communities.",
   "des": "Our healthcare programs aim to bridge the gap between quality medical services and underserved communities. We focus on providing accessible healthcare, preventive education, and critical medical support to individuals and families regardless of their financial or social background. Through medical camps, awareness initiatives, and treatment assistance, we work toward building healthier communities with long-term impact.",
-  "image": "/WHATWEDO.png",
+  "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085328/ss_page_assets/h0hudkpljw3f0nwdacnt.png",
   "sections": [
     {
       "title": "Medical Camps",
@@ -79,7 +79,7 @@
   "title": "Environmental Awareness",
   "tagline": "Inspiring action to protect the planet for future generations.",
   "des": "Our environmental awareness programs focus on educating communities about climate change, conservation, and sustainable living practices. Through hands-on initiatives like tree plantation, waste management education, and climate awareness campaigns, we empower individuals to take responsibility for protecting the environment and preserving natural resources for future generations.",
-  "image": "/WHATWEDO.png",
+  "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769084030/ss_page_assets/lslhke792ikvfndn2l0y.png",
   "sections": [
     {
       "title": "Climate Education",
@@ -104,7 +104,7 @@
   "title": "Women Empowerment",
   "tagline": "Empowering women with skills, confidence, and opportunities for a better future.",
   "des": "Our women empowerment programs focus on enabling women to achieve financial independence, self-confidence, and social equality. Through skill development, entrepreneurship support, and leadership training, we help women unlock their potential, strengthen their decision-making abilities, and create positive change within their families and communities.",
-  "image": "/gallery1.png",
+  "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769084031/ss_page_assets/qwruinjkuivgytjbui4b.png",
   "sections": [
     {
       "title": "Skill Development",
@@ -128,7 +128,7 @@
   "disaster-relief": {
   "title": "Disaster Relief",
   "tagline": "Providing rapid response and compassionate support during times of crisis.",
-  "image": "/gallery1.png",
+  "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/t9iinlgemfns8uo5ngtc.png",
   "des": "Our disaster relief programs focus on delivering immediate aid and long-term recovery support to communities affected by natural and man-made disasters. From emergency response and shelter assistance to rehabilitation and preparedness training, we work to restore safety, dignity, and resilience for individuals and families during their most challenging times.",
   "sections": [
     {
@@ -154,7 +154,7 @@
   "food-security": {
   "title": "Food Security",
   "tagline": "Fighting hunger and ensuring access to nutritious food for all.",
-  "image": "/gallery1.png",
+  "image": "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/bmyaappf4jdm7dvuixm5.png",
   "des": "Our food security programs aim to combat hunger and malnutrition by ensuring consistent access to safe, nutritious, and sufficient food. Through meal distribution, nutrition awareness, and emergency food relief, we support vulnerable children, elderly individuals, and families while working toward sustainable, long-term solutions to end hunger.",
   "sections": [
     {
@@ -197,31 +197,6 @@
     {
       "title": "Economic Empowerment",
       "content": "By acquiring market-relevant skills, young individuals achieve financial independence, drive economic growth, and contribute to sustainable livelihoods in their communities."
-    }
-  ]
-},
-
-  "community-development": {
-  "title": "Community Development",
-  "tagline": "Building stronger, resilient communities through sustainable infrastructure and engagement.",
-  "image": "/gallery1.png",
-  "des": "Our community development programs focus on creating sustainable, empowered communities. By improving infrastructure, providing resources, and encouraging active local participation, we help communities overcome challenges, enhance quality of life, and achieve long-term growth. Through youth engagement, volunteer programs, and grassroots initiatives, we work to ensure that communities are not just recipients of aid but active partners in their own development.",
-  "sections": [
-    {
-      "title": "Local Engagement",
-      "content": "We prioritize local engagement as the foundation of successful community development. By working closely with community members, we identify the unique challenges they face, gather insights about their needs, and co-create solutions that are practical and impactful. This participatory approach ensures that programs are relevant and sustainable. Local engagement also fosters a sense of ownership among residents, motivating them to actively contribute to the development process. Our team conducts workshops, focus group discussions, and community meetings to ensure every voice is heard and every initiative reflects local priorities. Effective engagement builds trust, strengthens social cohesion, and creates an empowered community capable of addressing its own challenges."
-    },
-    {
-      "title": "Infrastructure Support",
-      "content": "Improving community infrastructure is key to enhancing the quality of life and enabling long-term development. Our programs focus on essential areas such as access to clean water, proper sanitation, reliable electricity, safe public spaces, and healthcare facilities. We collaborate with local authorities, NGOs, and volunteers to design and implement projects that meet the immediate needs of communities while laying the foundation for sustainable growth. Infrastructure development also includes the creation of schools, roads, community centers, and recreational areas. By strengthening infrastructure, communities become more resilient to environmental and economic challenges, improving both health and productivity for all residents."
-    },
-    {
-      "title": "Youth & Volunteer Programs",
-      "content": "Youth engagement and volunteer mobilization are central to our community development strategy. We provide platforms for young leaders and volunteers to actively participate in social initiatives, fostering skills such as leadership, teamwork, and problem-solving. By involving youth, we ensure that programs remain dynamic, innovative, and reflective of the community's evolving needs. Volunteer programs also help distribute resources effectively, support education, conduct awareness campaigns, and assist in infrastructure projects. Engaging youth and volunteers not only accelerates project implementation but also cultivates a culture of civic responsibility, encouraging the next generation to take ownership of their community’s future."
-    },
-    {
-      "title": "Sustainable Growth",
-      "content": "Sustainable growth is the ultimate goal of our community development initiatives. We aim to empower communities to lead their own development journey, ensuring that improvements are maintained and adapted over time. This involves building local capacity through training, mentorship, and access to resources that allow communities to plan, manage, and scale projects independently. Our focus on sustainability includes promoting environmentally friendly practices, financial independence, and social inclusion. By creating resilient systems and strengthening local governance, communities are better equipped to face future challenges, improve livelihoods, and achieve long-lasting socio-economic growth. Empowered communities become self-reliant, inclusive, and capable of driving positive change from within."
     }
   ]
 }

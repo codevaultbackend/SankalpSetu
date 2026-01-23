@@ -37,20 +37,13 @@ export default function AboutNonProfitSection() {
 
         {/* ================= IMAGE ================= */}
         <div className="relative mt-[96px] overflow-hidden rounded-xl max-[600px]:mt-[54px]">
-          <Image
-            src="/AboutBanner.png"
-            alt="Nonprofit Team"
-            width={1400}
-            height={448}
-            className="h-[448px] w-full object-cover sm:h-[360px] md:h-[420px]"
-            priority
-          />
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg hover:scale-105 transition">
-              <PlayIcon className="h-7 w-7 text-gray-800" />
-            </button>
-          </div>
+          <video
+            autoPlay
+            loop
+            muted
+            src="https://res.cloudinary.com/ddcy9noqo/video/upload/v1769090507/ss_page_assets/wkinilvllryvqzkx6jzy.mp4"
+            className="h-[448px] w-full object-cover max-[600px]:h-full md:h-[420px]"
+          ></video>
         </div>
 
         {/* Vision & Mission Cards */}

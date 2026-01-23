@@ -26,7 +26,7 @@ export default function HeroSection() {
         </div>
 
         {/* COLUMN 4 — LG+ */}
-        <div className="hidden lg:flex flex-col gap-8 justify-center">
+        <div className=" lg:flex flex-col gap-8 justify-center">
           <EducationCard />
           <GalleryBig />
         </div>
@@ -47,7 +47,7 @@ export default function HeroSection() {
 
 function Card95() {
   return (
-    <div className="h-[400px] rounded-[40px] overflow-hidden">
+    <div className="h-[400px] rounded-[40px] mt-[12px] overflow-hidden">
       <img src="/hero1.png" alt="" className="w-full h-full object-cover" />
     </div>
   );
@@ -55,7 +55,7 @@ function Card95() {
 
 function EducationCard() {
   return (
-    <div className="relative h-[360px] rounded-[40px] overflow-hidden">
+    <div className="relative h-[360px] mt-[12px] rounded-[40px] overflow-hidden">
       <Image src="/hero5.png" fill alt="" className="object-cover" />
     </div>
   );
@@ -63,7 +63,7 @@ function EducationCard() {
 
 function MedicationCard() {
   return (
-    <div className="relative h-[360px] rounded-[40px] overflow-hidden">
+    <div className="relative h-[360px] mt-[12px] rounded-[40px] overflow-hidden">
       <Image src="/hero4.png" fill alt="" className="" />
     </div>
   );
@@ -71,7 +71,7 @@ function MedicationCard() {
 
 function DonateCard() {
   return (
-    <div className="h-[220px] rounded-[40px] overflow-hidden">
+    <div className="h-[220px] mt-[12px] rounded-[40px] overflow-hidden">
       <img src="/hero7.png" alt="" className="w-full h-full " />
     </div>
   );
@@ -79,7 +79,7 @@ function DonateCard() {
 
 function GalleryBig() {
   return (
-    <div className="h-[420px] rounded-[40px] overflow-hidden">
+    <div className="h-[420px] mt-[12px] rounded-[40px] overflow-hidden">
       <img src="/hero6.png" alt="" className="w-full h-full " />
     </div>
   );
@@ -87,7 +87,7 @@ function GalleryBig() {
 
 function GallerySmall() {
   return (
-    <div className="h-[195px] rounded-[40px] overflow-hidden">
+    <div className="h-[195px] mt-[12px] rounded-[40px] overflow-hidden">
       <img src="/hero3.png" alt="" className="w-full h-full " />
     </div>
   );
@@ -95,7 +95,7 @@ function GallerySmall() {
 
 function SpreadLove() {
   return (
-    <div className="h-[195px] rounded-[40px] overflow-hidden bg-black border border-gray-800">
+    <div className="h-[195px] mt-[12px] rounded-[40px] overflow-hidden bg-black border border-gray-800">
       <img src="/hero2.png" alt="" className="w-full h-full " />
     </div>
   );

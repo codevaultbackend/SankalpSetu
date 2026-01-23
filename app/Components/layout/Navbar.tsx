@@ -20,14 +20,15 @@ export default function Navbar() {
 
   return (
     <header className="w-full border-b border-gray-100">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-        {/* Logo */}
-        <Link href='/'>
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-2">
+     
+        <Link href='/' className="flex !no-underline !items-center !border-[1px solid #0e7a7a] gap-[4px] font-[700] p-[3px] rounded-[6px]">
           <img
             src="../SankalpSetuLogo.png"
             className="max-[600px]:h-[44px] max-[600px]:w-[44px] h-[54px] w-auto object-cover "
             alt="SankalpSetu"
           />
+          <div className="flex items-center text-[17px] leading-[109%] !text-[#0e7a7a]  font-[700] !no-underline" >Sankalp <br/> Setu</div>
         </Link>
 
         {/* Desktop Menu */}

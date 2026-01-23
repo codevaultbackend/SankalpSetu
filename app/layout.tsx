@@ -17,7 +17,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="max-w-[1440px] mx-auto">
+      <body className="" >
         <ServicesProvider>
           <Navbar />
           {children}

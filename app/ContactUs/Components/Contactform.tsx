@@ -210,7 +210,7 @@ export default function Contactform() {
 
           <div className="relative flex items-center max-h-[592px] w-full m-auto justify-center  bg-[#fff] max-[650px]:hidden ">
             <Image
-              src="/biharMap.png"
+              src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769083950/ss_page_assets/spn1zkqkllhhqvmhhlmw.png"
               alt="Bihar Map"
               width={592}
               height={92}

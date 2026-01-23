@@ -88,13 +88,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#1c1b1b] mt-[40px] text-white overflow-hidden max-w-[1440px] mx-auto">
+    <footer className="relative bg-[#1c1b1b]  text-white overflow-hidden max-w-[1440px] mx-auto">
       {/* Background Text */}
       <div className="pointer-events-none absolute inset-0">
-        <span className="absolute right-6 sm:right-24 top-10 sm:top-16 text-[80px] sm:text-[120px] lg:text-[200px] font-bold tracking-[0.2em] text-white/5">
-          SANLAP
+        <span className="absolute right-6 sm:right-24 top-0
+         sm:top-16 text-[80px] sm:text-[120px] lg:text-[200px] font-bold tracking-[0.2em] text-white/5 max-[600px]:text-[40px] ">
+          SANKALP
         </span>
-        <span className="absolute right-6 sm:right-24 bottom-10 sm:bottom-24 text-[80px] sm:text-[120px] lg:text-[200px] font-bold tracking-[0.2em] text-white/5">
+        <span className="absolute right-6 sm:right-24 bottom-10 sm:bottom-24 text-[80px] sm:text-[120px] lg:text-[200px] font-bold tracking-[0.2em] text-white/5 ">
           SETU
         </span>
       </div>

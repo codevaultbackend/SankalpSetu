@@ -13,7 +13,7 @@ export default function Media() {
       {/* <NetworkVisual /> */}
       <GeometricSection />
       <BlogGrid />
-      <BlogStories />
+      {/* <BlogStories /> */}
     </div>
   );
 }

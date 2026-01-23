@@ -14,28 +14,9 @@ const blogs = [
   },
   {
     images: ["/HeroBg.png", "/HeroBg1.png"],
-    title: "Siwan",
+    title: "Gurgaon",
   },
-  {
-    images: ["/HeroBg.png", "/HeroBg.png", "/HeroBg.png"],
-
-    title: "Gajipur",
-  },
-  {
-    images: ["/HeroBg.png", "/HeroBg.png"],
-    title: "Ludhiyana",
-  },
-  {
-    images: [
-      "/HeroBg.png",
-      "/HeroBg.png",
-      "/HeroBg.png",
-      "/HeroBg.png",
-      "/HeroBg.png",
-      "/HeroBg.png",
-    ],
-    title: "GuruGram",
-  },
+  
 ];
 
 export default function BlogGrid() {

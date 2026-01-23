@@ -28,7 +28,7 @@ export default function WhatWeDid() {
         <div className="flex items-start justify-between gap-10 mb-8">
           <div className="max-w-[900px]">
             <div className="flex items-center gap-6 mb-6">
-              <h2 className="!text-[48px] font-[700] tracking-tight">
+              <h2 className="!text-[48px] max-[600px]:!text-[24px] font-[700] tracking-tight">
                 WHAT WE DID
               </h2>
               <span className="h-[1px] w-20 bg-black/30" />
@@ -45,8 +45,8 @@ export default function WhatWeDid() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((item) => (
-            <div key={item.slug} className="relative z-[9999]">
-              <div className="relative h-[430px] max-w-[420px] w-full">
+            <div key={item.slug} className="relative z-[9999] max-[800px]:max-w-[420px] max-[800px]:mx-auto">
+              <div className="relative h-[430px] !max-w-[420px] w-full max-[420px]:w-fit ">
                 <Image
                   src={item.image}
                   alt={item.title}

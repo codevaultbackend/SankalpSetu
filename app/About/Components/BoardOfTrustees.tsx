@@ -2,13 +2,13 @@ import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const trustees = [
-  { name: "Mr. Deepak Kumar", role: "Founder & Chairperson", image: "/WHATWEDO.png" },
-  { name: "Mr. Jagannath Kumar", role: "Secretariat", image: "/WHATWEDO.png" },
-  { name: "Mr. Nihal Kumar Gupta", role: "Treasurer", image: "/WHATWEDO.png" },
-  { name: "Mr. Sarvan Jha", role: "Team Member", image: "/WHATWEDO.png" },
-  { name: "Mr. Raman Srivastav", role: "Team Member", image: "/WHATWEDO.png" },
-  { name: "Ms. Sangita Kumari", role: "Team Member", image: "/WHATWEDO.png" },
-  { name: "Mr. Nitish Kumar", role: "Team Member", image: "/WHATWEDO.png" },
+  { name: "Mr. Deepak Kumar", role: "Founder & Chairperson", image: "/Deepak.jpeg" },
+  { name: "Mr. Jagannath Kumar", role: "Secretariat", image: "/santoshsir.jpeg" },
+  { name: "Mr. Nihal Kumar Gupta", role: "Treasurer", image: "/Nihal.jpeg" },
+  { name: "Mr. Sarvan Jha", role: "Team Member", image: "/Sarvan.JPEG" },
+  { name: "Mr. Raman Srivastav", role: "Team Member", image: "/raman.png" },
+  { name: "Ms. Sangita Kumari", role: "Team Member", image: "/sangita.jpeg" },
+  { name: "Mr. Nitish Kumar", role: "Team Member", image: "/sumit.jpeg" },
 ];
 
 export default function BoardOfTrustees() {
@@ -45,8 +45,8 @@ export default function BoardOfTrustees() {
               {/* Golden hat */}
               <div className="absolute top-[-42px] max-w-[360px] !w-full h-[75px] bg-[#7A6A00] rounded-[12px]" />
 
-              <div className="relative w-[296px] h-[320px] overflow-hidden rounded-[8px] bg-[#F4F5F7] max-[600px]:!mx-[35px]">
-                <Image src={t.image} alt={t.name} fill className="object-cover" />
+              <div className="relative w-[296px] h-[390px] max-w-[600px]:overflow-hidden rounded-[8px] bg-[#F4F5F7] max-[600px]:!mx-[35px]">
+                <Image src={t.image} alt={t.name} fill className={` ${i === 3 ? 'object-fill': 'object-cover'}`} />
               </div>
 
               <p className="mb-0 text-[20px] font-[500] text-[#1D2130] !mt-[16px] leading-[160%]">
@@ -68,7 +68,7 @@ export default function BoardOfTrustees() {
           {bottomTrustees.map((t, i) => (
             <div key={i} className="flex flex-col items-center text-center">
 
-              <div className="relative w-[200px] h-[220px] overflow-hidden rounded-[8px] bg-[#F4F5F7]">
+              <div className="relative w-[200px] h-[240px] overflow-hidden rounded-[8px] bg-[#F4F5F7]">
                 <Image src={t.image} alt={t.name} fill className="object-cover" />
               </div>
 

@@ -3,22 +3,22 @@ import Image from "next/image";
 const newsData = [
   {
     title: "150 Youth Trained in Digital Skills",
-    image: "https://images.pexels.com/photos/2132171/pexels-photo-2132171.jpeg",
+    image: "./news1.png",
     des: "Empowering unemployed youth with job-ready technology training",
   },
   {
     title: "Free Health Camp Reaches 500 Families",
-    image: "https://images.pexels.com/photos/2132171/pexels-photo-2132171.jpeg",
+    image: "./news3.png",
     des: "Medical screening and awareness drive in rural communities",
   },
   {
     title: "40 Women Launch Their Own Businesses",
-    image: "https://images.pexels.com/photos/2132171/pexels-photo-2132171.jpeg",
+    image: "./news2.png",
     des: "Financial literacy program creates new women entrepreneurs",
   },
   {
     title: "Sankalp Setu Celebrates 2 Years of Impact",
-    image: "https://images.pexels.com/photos/2132171/pexels-photo-2132171.jpeg",
+    image: "./news4.png",
     des: "Two years of transforming lives through education and healthcare",
   },
 ];

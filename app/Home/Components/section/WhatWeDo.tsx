@@ -15,7 +15,7 @@ export default function WhatWeDo() {
       <img
         src="/CircularArrow.png"
         alt="CircularArrow"
-        className="absolute max-[600px]:h-[105px] max-[600px]:w-[151px] max-[600px]:top-[-32px] h-[317px] w-[450px] right-0 -top-[8%]"
+        className="absolute max-[800px]:h-[105px] max-[800px]:w-[151px] max-[800px]:top-[-32px] h-[317px] w-[450px] right-0 -top-[8%]"
       />
 
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6">

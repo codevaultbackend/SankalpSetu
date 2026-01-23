@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-16 lg:py-28 max-[600px]:py-10">
+    <section className="bg-white py-16 lg:py-28  lg:pt-0 max-[600px]:py-10">
       <div className="mx-auto max-w-[1280px] px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 max-[600px]:gap-8 items-center !mt-[78px] max-[600px]:!mt-[0px]">
         {/* ================= IMAGE COLLAGE ================= */}
         <div className="flex justify-center">
@@ -21,13 +21,13 @@ export default function AboutSection() {
               <div className="relative w-[560px] h-[560px]">
                 {/* Top Left */}
                 <div className="absolute left-0 top-0 w-[220px] h-[220px] overflow-hidden ">
-                  <Image src="/img1.png" fill className="object-cover" alt="" />
+                  <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/t9iinlgemfns8uo5ngtc.png" fill className="object-cover" alt="" />
                 </div>
 
                 {/* Top Center */}
                 <div className="absolute left-[260px] top-[40px] w-[76px] h-[76px] overflow-hidden">
                   <Image
-                    src="/gallery1.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/ayhpgwhsmk8zrma9fpmi.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -37,7 +37,7 @@ export default function AboutSection() {
                 {/* Top Right */}
                 <div className="absolute right-[20px] top-0 w-[106px] h-[106px] overflow-hidden">
                   <Image
-                    src="/gallery3.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/zczikqyf9rdeouvidjdz.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -47,7 +47,7 @@ export default function AboutSection() {
                 {/* Mid Left */}
                 <div className="absolute left-[106px] top-[260px] w-[114px] h-[114px] overflow-hidden">
                   <Image
-                    src="/gallery4.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/wr5mt6cv4q6wysr6glnt.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -57,7 +57,7 @@ export default function AboutSection() {
                 {/* Center Large */}
                 <div className="absolute left-[276px] top-[145px] w-[182px] h-[182px] overflow-hidden">
                   <Image
-                    src="/gallery3.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085325/ss_page_assets/grybw7ybm1oxebnwaubr.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -67,7 +67,7 @@ export default function AboutSection() {
                 {/* Bottom Left */}
                 <div className="absolute left-0 bottom-0 w-[160px] h-[160px] overflow-hidden">
                   <Image
-                    src="/gallery5.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/kl9k33wazfkjmqdhdgn2.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -77,7 +77,7 @@ export default function AboutSection() {
                 {/* Bottom Center */}
                 <div className="absolute left-[200px] bottom-[30px] w-[120px] h-[120px] overflow-hidden">
                   <Image
-                    src="/gallery6.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/devbr6dzm5dvx9qxwl2h.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -87,7 +87,7 @@ export default function AboutSection() {
                 {/* Bottom Right */}
                 <div className="absolute right-0 max-[600px]:right-[-10px] bottom-[10px] w-[200px] h-[200px] overflow-hidden">
                   <Image
-                    src="/gallery7.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/bmyaappf4jdm7dvuixm5.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -99,7 +99,7 @@ export default function AboutSection() {
         </div>
 
         {/* ================= CONTENT ================= */}
-        <div className="max-w-[560px] flex flex-col gap-10 max-[600px]:!gap-1 text-center lg:!text-left">
+        <div className="max-w-[560px] max-[900px]:mx-auto flex flex-col gap-10 max-[600px]:!gap-1 text-center lg:!text-left">
           <div>
             <h2 className="text-[42px] sm:text-[56px] lg:!text-[72px] font-semibold leading-[100%] mb-[19px] text-black">
               About us
