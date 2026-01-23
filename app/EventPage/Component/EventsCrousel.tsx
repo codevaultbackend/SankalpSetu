@@ -5,6 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+ import eventImage1 from './eventImage/event1.png'
+  import eventImage2 from './eventImage/event2.png'
+   import eventImage3 from './eventImage/event3.png'
+
 
 type EventsCrouselProps = {
   reverse?: boolean;
@@ -17,7 +21,7 @@ const slides = [
     desc: "Us to embark on a culinary adventure, experiencing the rich tapestry of flavours that various cultures offer. From the spicy curries of India to the delicate sushi of Japan.",
     author: "Norma Durham",
     date: "11 Jun 2024",
-    image: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg",
+    image: eventImage1,
   },
   {
     tag: "Travel",
@@ -25,7 +29,7 @@ const slides = [
     desc: "Explore untouched destinations, scenic coastlines, and hidden villages that redefine travel experiences across the globe.",
     author: "Alex Morgan",
     date: "22 Jun 2024",
-    image: "https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg",
+    image:  eventImage2,
   },
   {
     tag: "Nature",
@@ -33,7 +37,7 @@ const slides = [
     desc: "Reconnect with nature through mountains, forests, and oceans that offer peace, thrill, and inspiration.",
     author: "Emma Stone",
     date: "30 Jun 2024",
-    image: "https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg",
+    image:  eventImage3,
   },
 ];
 
@@ -74,7 +78,7 @@ export default function EventsCrousel({ reverse = false }: EventsCrouselProps) {
                   alt={item.title}
                   width={650}
                   height={664}
-                  className="w-full h-[664px] lg:h-[664px] max-[600px]:max-w-full object-cover max-w-[548px]"
+                  className="w-full h-[664px] lg:h-[664px] max-[600px]:max-w-full object-none max-w-[548px] "
                 />
               </div>
 
