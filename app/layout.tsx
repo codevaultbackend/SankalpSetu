@@ -1,6 +1,8 @@
 import Footer from "./Components/layout/Footer";
 import Navbar from "./Components/layout/Navbar";
 import { ServicesProvider } from "./context/ServicesContext";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 
 export default function RootLayout({
