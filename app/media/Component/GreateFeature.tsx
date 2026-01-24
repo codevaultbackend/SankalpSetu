@@ -30,7 +30,7 @@ export default function GreateFeature() {
 
         {/* IMAGE */}
         <img
-          src="/ContactUsCircle.png"
+          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/dfo1d9ifdi5b4kj1lsjd.png"
           alt="ContactUs"
           className="
             mx-auto mt-8 mb-16

@@ -49,19 +49,19 @@ export default function ContactDetails() {
                 Branch Office:
               </h3>
 
-              <ul className="space-y-4 text-[#2E2E2E] text-[17px]">
+              <ul className="space-y-4 text-[#1A1A1A] text-[17px]">
                 <li className="flex items-center gap-4 !mt-[14px]">
-                  <i className="fa-solid fa-phone text-gray-500" />
-                  <span>+447473997191</span>
+                  <i className="fa-solid fa-phone text-[#1A1A1A]" />
+                  <span>+91 92116 21996</span>
                 </li>
 
                 <li className="flex items-center gap-4 !mt-[14px]">
-                  <i className="fa-solid fa-envelope text-gray-500 " />
+                  <i className="fa-solid fa-envelope text-[#1A1A1A] " />
                   <span>Parthdesigns@gmail.com</span>
                 </li>
 
                 <li className="flex items-center gap-4 !mt-[14px]">
-                  <i className="fa-solid fa-location-dot text-gray-500" />
+                  <i className="fa-solid fa-location-dot text-[#1A1A1A]" />
                   <span>2068 Boulevard Henri - Bourassa Est</span>
                 </li>
               </ul>

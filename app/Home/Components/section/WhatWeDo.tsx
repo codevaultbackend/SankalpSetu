@@ -13,7 +13,7 @@ export default function WhatWeDo() {
     <section className="bg-white sm:pb-24  pb-0 relative">
       {/* Background Decoration */}
       <img
-        src="/CircularArrow.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/wgkex80xyrs5gurrzsne.png"
         alt="CircularArrow"
         className="absolute max-[800px]:h-[105px] max-[800px]:w-[151px] max-[800px]:top-[-32px] h-[317px] w-[450px] right-0 -top-[8%]"
       />

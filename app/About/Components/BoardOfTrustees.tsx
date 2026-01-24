@@ -2,13 +2,13 @@ import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const trustees = [
-  { name: "Mr. Deepak Kumar", role: "Founder & Chairperson", image: "/Deepak.jpeg" },
-  { name: "Mr. Jagannath Kumar", role: "Secretariat", image: "/santoshsir.jpeg" },
-  { name: "Mr. Nihal Kumar Gupta", role: "Treasurer", image: "/Nihal.jpeg" },
-  { name: "Mr. Sarvan Jha", role: "Team Member", image: "/Sarvan.JPEG" },
-  { name: "Mr. Raman Srivastav", role: "Team Member", image: "/raman.png" },
-  { name: "Ms. Sangita Kumari", role: "Team Member", image: "/sangita.jpeg" },
-  { name: "Mr. Nitish Kumar", role: "Team Member", image: "/sumit.jpeg" },
+  { name: "Mr. Deepak Kumar", role: "Founder & Chairperson", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/suhawmdyttxpzfbaj49v.jpg" },
+  { name: "Mr. Jagannath Kumar", role: "Secretariat", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/f8s7zqfub62rerbver4i.jpg" },
+  { name: "Mr. Nihal Kumar Gupta", role: "Treasurer", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/adck0mq8ewiejntqq6si.jpg" },
+  { name: "Mr. Sarvan Jha", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/etmddt1fbrtb0qslbcbk.jpg" },
+  { name: "Mr. Raman Srivastav", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168059/ss_page_assets/idrhtutsykug6jajedxy.png" },
+  { name: "Ms. Sangita Kumari", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/g0iebuslpunmn0fidvz8.jpg" },
+  { name: "Mr. Nitish Kumar", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/vrw6c96pann3qe5rwrog.jpg" },
 ];
 
 export default function BoardOfTrustees() {
@@ -30,10 +30,10 @@ export default function BoardOfTrustees() {
           </p>
 
           <div className="hidden lg:block absolute left-[-160px] top-1/2 -translate-y-1/2">
-            <Image src="/forLeft.png" width={320} height={220} alt="left arrow" />
+            <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/r3l6wxewfkdutq7mz7xk.png" width={320} height={220} alt="left arrow" />
           </div>
           <div className="hidden lg:block absolute right-[-144px] top-1/2 -translate-y-1/2">
-            <Image src="/forRight.png" width={320} height={220} alt="right arrow" />
+            <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/uphr3patud2ldeykvdwg.png" width={320} height={220} alt="right arrow" />
           </div>
         </div>
 

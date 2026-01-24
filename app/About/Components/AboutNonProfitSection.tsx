@@ -52,7 +52,7 @@ export default function AboutNonProfitSection() {
           <div className="relative rounded-[32px] border border-[#7BC47F] bg-[#F3FAF4] px-10 max-[600px]:px-5 max-[600px]:pt-[70px] pt-[120px] pb-10 max-w-[520px] overflow-hidden">
             {/* diagonal background lines */}
             <img
-              src="/vissionbg.png"
+              src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/qjaeq0rdypwgfvnnno5m.png"
               alt=""
               className="absolute top-0 left-0 w-full h-[186px] max-[600px]:h-[142px]  object-cover opacity-100 z-0"
             />
@@ -60,7 +60,7 @@ export default function AboutNonProfitSection() {
             {/* floating icon */}
             <div className="absolute top-[7px] left-[40px]   z-10">
               <img
-                src="/vissionIcon.png"
+                src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/teeeav9vxwnhabzx0cyg.png"
                 alt="Vision icon"
                 className="object-contain max-[600px]:!w-[120px] max-[600px]:!h-[130px] !w-[145px] !h-[166px]"
               />
@@ -93,7 +93,7 @@ export default function AboutNonProfitSection() {
           <div className="relative rounded-[32px] border border-[#7BC47F] bg-[#F3FAF4] px-10 pt-14 pb-[140px] max-w-[520px] overflow-hidden">
             {/* curved background lines */}
             <img
-              src="/missionbg.png"
+              src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/smtso0qeglz5wmmq6z7n.png"
               alt=""
               className="absolute bottom-0 right-0 w-full h-[252px] max-[600px]:h-[152px] object-cover z-0"
             />
@@ -116,7 +116,7 @@ export default function AboutNonProfitSection() {
             {/* target icon */}
 
             <img
-              src="/MissionIcon.png"
+              src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/teeeav9vxwnhabzx0cyg.png"
               alt="mission"
               className="absolute bottom-[36px] right-[36px] w-[120px] h-[120px] "
             />

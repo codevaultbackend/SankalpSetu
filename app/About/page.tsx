@@ -9,7 +9,7 @@ export default function About() {
     return(
         <>
         <AboutNonProfitSection />
-        <AwardsRecognitions />
+        {/* <AwardsRecognitions /> */}
         <BoardOfTrustees/>
         <NewsSection />
         <EventsSection />

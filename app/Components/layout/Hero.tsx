@@ -16,7 +16,7 @@ export default function Hero() {
             Learning Today, Leading Tomorrow
           </span>
 
-          <h1 className="text-[40px] max-[600px]:!text-[20px] leading-tight font-semibold text-[#4a3b08] max-w-xl">
+          <h1 className="text-[36px] max-[600px]:!text-[20px] leading-tight font-semibold text-[#4a3b08] max-w-xl">
             “Empowering Every Child With <br />
             The Gift Of Knowledge.”
           </h1>
@@ -51,12 +51,12 @@ export default function Hero() {
 
           {/* Child Image */}
           <Image
-            src="/child-hero.png"
+            src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168061/ss_page_assets/eqeelsiv4bbw7rlyc6vv.png"
             alt="Child with education board"
-            width={260}
-            height={380}
+            width={663}
+            height={529}
             priority
-            className="relative z-[9999999999] object-contain max-w-[693px] w-full h-auto"
+            className="relative z-[9999999999] object-cover max-w-[663px] w-full h-auto"
           />
 
           {/* Floating cards */}

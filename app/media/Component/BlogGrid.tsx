@@ -6,7 +6,11 @@ import Image from "next/image";
 const blogs = [
   {
     images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.32.32_erhrea.jpg", "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166403/WhatsApp_Image_2026-01-23_at_16.34.16_jlgsyl.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.33.28_znfi5n.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166471/WhatsApp_Image_2026-01-23_at_16.37.17_jsn7fh.jpg"],
-    title: "Gurgaon",
+    title: "Hajipur-1",
+  },
+   {
+    images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.32.32_erhrea.jpg", "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166403/WhatsApp_Image_2026-01-23_at_16.34.16_jlgsyl.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.33.28_znfi5n.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166471/WhatsApp_Image_2026-01-23_at_16.37.17_jsn7fh.jpg"],
+    title: "Hajipur-2",
   },
   
 ];

@@ -63,12 +63,12 @@ export default function Contactform() {
   return (
     <section className="relative w-full bg-[#EFF7F2] py-24 select-none ">
       <img
-        src="/contactArrowLeft.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/qyzl9ewgxz764wtal91z.png"
         className="absolute left-0 top-12 w-[220px] h-auto   "
         alt="contactArrow"
       />
       <img
-        src="/contactArrowright.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/rsoxurj1l2p4m9rundqp.png"
         className="absolute right-0 top-12 w-[220px] h-auto  "
         alt="contactArrow"
       />
@@ -87,22 +87,22 @@ export default function Contactform() {
 
       <div className="relative max-w-[1050px] mx-auto px-6 pt-[35px] bg-[#EFF7F2]">
         <img
-          src="/dotContainer3.png"
+          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/vudzotnvdg6m24kkmla5.png"
           alt="Sankalp_image"
           className="absolute top-0 w-[131px] h-[263px] left-0  "
         />
         <img
-          src="/dotContainer2.png"
+          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/o9rgdtu5rphvakh9smfe.png"
           alt="Sankalp_image"
           className="absolute top-0 w-[131px] h-[263px] right-0 "
         />
         <img
-          src="/dotContainer1.png"
+          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/t7lmrrznkpr2ebgj9pmh.png"
           alt="Sankalp_image"
           className="absolute bottom-0 h-[131px] w-[263px] left-0  "
         />
         <img
-          src="/dotContainer1.png"
+          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/t7lmrrznkpr2ebgj9pmh.png"
           alt="Sankalp_image"
           className="absolute bottom-0 h-[201px] w-[263px] right-0 rotate-[180deg]"
         />
@@ -227,12 +227,12 @@ export default function Contactform() {
         </div>
       </div>
       <img
-        src="/bottomLeft.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/jcxvhtwrh1fyjkafxcj0.png"
         className="absolute left-0 bottom-12 w-auto h-[198px] max-[650px]:hidden"
         alt="contactArrow"
       />
       <img
-        src="/bottomright.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168055/ss_page_assets/yl99avlhkwjxad0u2hyk.png"
         className="absolute right-0 bottom-12 w-auto h-[198px] max-[650px]:hidden"
         alt="contactArrow"
       />

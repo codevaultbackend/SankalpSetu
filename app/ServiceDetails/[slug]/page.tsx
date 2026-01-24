@@ -22,7 +22,7 @@ export default function ServiceDetailsPage({ params }: Props) {
         <h1 className="text-4xl lg:text-5xl font-bold !mb-12 text-center">
           {service.title}
         </h1>
-        <div className="lg:flex lg:flex-row w-full">
+        <div className="lg:flex lg:flex-row w-full lg:gap-4">
           <div className="w-[50%] max-[650px]:!w-full">
             <p className="text-[#0e7a7a] font-bold leading-[150%] text-sm lg:text-[25px] mb-8">
               {service.tagline}

@@ -24,7 +24,7 @@ export default function HeroSection() {
 
             <div className="relative mt-14 ml-[94px] max-[650px]:ml-0 ">
               <img
-                src="/ContactUsCircle.png"
+                src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/dfo1d9ifdi5b4kj1lsjd.png"
                 alt="circle"
                 className="w-[220px] sm:w-[260px] lg:w-[307px] max-[650px]:w-[90%] max-[650px]:mx-auto "
               />

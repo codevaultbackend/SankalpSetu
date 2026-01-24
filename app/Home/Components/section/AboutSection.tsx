@@ -21,13 +21,13 @@ export default function AboutSection() {
               <div className="relative w-[560px] h-[560px]">
                 {/* Top Left */}
                 <div className="absolute left-0 top-0 w-[220px] h-[220px] overflow-hidden ">
-                  <Image src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/t9iinlgemfns8uo5ngtc.png" fill className="object-cover" alt="" />
+                  <Image  src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/devbr6dzm5dvx9qxwl2h.png" fill className="object-cover" alt="" />
                 </div>
 
                 {/* Top Center */}
-                <div className="absolute left-[260px] top-[40px] w-[76px] h-[76px] overflow-hidden">
+                <div className="absolute left-[260px] top-[40px] w-[86px] h-[86px] overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/ayhpgwhsmk8zrma9fpmi.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769247810/Rectangle_67_a7haxw.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -37,7 +37,7 @@ export default function AboutSection() {
                 {/* Top Right */}
                 <div className="absolute right-[20px] top-0 w-[106px] h-[106px] overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/zczikqyf9rdeouvidjdz.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/bmyaappf4jdm7dvuixm5.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -67,7 +67,7 @@ export default function AboutSection() {
                 {/* Bottom Left */}
                 <div className="absolute left-0 bottom-0 w-[160px] h-[160px] overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/kl9k33wazfkjmqdhdgn2.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/zczikqyf9rdeouvidjdz.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -77,7 +77,7 @@ export default function AboutSection() {
                 {/* Bottom Center */}
                 <div className="absolute left-[200px] bottom-[30px] w-[120px] h-[120px] overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/devbr6dzm5dvx9qxwl2h.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/ayhpgwhsmk8zrma9fpmi.png"
                     fill
                     className="object-cover"
                     alt=""
@@ -87,7 +87,7 @@ export default function AboutSection() {
                 {/* Bottom Right */}
                 <div className="absolute right-0 max-[600px]:right-[-10px] bottom-[10px] w-[200px] h-[200px] overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085323/ss_page_assets/bmyaappf4jdm7dvuixm5.png"
+                    src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769085324/ss_page_assets/t9iinlgemfns8uo5ngtc.png"
                     fill
                     className="object-cover"
                     alt=""

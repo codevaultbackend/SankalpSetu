@@ -69,3 +69,64 @@ body {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+.flag {
+  width: 240px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+/* LEFT SIDE */
+.saffron-left {
+  background: linear-gradient(
+    to right,
+    rgba(255,153,51,0) 0%,
+    rgba(255,153,51,0.3) 35%,
+    #ff9933 100%
+  );
+}
+
+.white-left {
+  background: linear-gradient(
+    to right,
+    rgba(220,220,220,0) 0%,
+    rgba(220,220,220,0.35) 35%,
+    rgba(220,220,220,0.9) 100%
+  );
+}
+
+.green-left {
+  background: linear-gradient(
+    to right,
+    rgba(19,136,8,0) 0%,
+    rgba(19,136,8,0.3) 35%,
+    #138808 100%
+  );
+}
+
+/* RIGHT SIDE */
+.saffron-right {
+  background: linear-gradient(
+    to left,
+    rgba(255,153,51,0) 0%,
+    rgba(255,153,51,0.3) 35%,
+    #ff9933 100%
+  );
+}
+
+.white-right {
+  background: linear-gradient(
+    to left,
+    rgba(220,220,220,0) 0%,
+    rgba(220,220,220,0.35) 35%,
+    rgba(220,220,220,0.9) 100%
+  );
+}
+
+.green-right {
+  background: linear-gradient(
+    to left,
+    rgba(19,136,8,0) 0%,
+    rgba(19,136,8,0.3) 35%,
+    #138808 100%
+  );
+}
