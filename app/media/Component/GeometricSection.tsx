@@ -37,9 +37,9 @@ const DiamondImage = ({ src, alt }: { src: string; alt: string }) => (
 
 export default function TeamSection() {
   return (
-    <section className="bg-gray-50 py-24 px-4 min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="bg-gray-50 py-4 px-4 min-h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="text-center mb-20">
-        <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">Our Core Team</h2>
+        <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight ">Our Work for a Better Tomorrow</h2>
         <div className="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
       </div>
 

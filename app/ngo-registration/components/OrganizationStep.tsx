@@ -75,7 +75,7 @@ export default function OrganizationStep({ data, setData, next }: any) {
         {/* Website */}
         <Field label="Website (Optional)">
           <input
-            className="w-full rounded-lg bg-gray-100 px-4 py-3 text-gray-500 cursor-not-allowed"
+            className="w-full rounded-lg bg-gray-100 px-4 max-[600px]:px-1 py-3 text-gray-500 cursor-not-allowed"
             placeholder="https://www.example.com"
             value={data.website}
             disabled
@@ -152,7 +152,7 @@ function Field({
 
 function inputClass(error?: boolean) {
   return `
-    w-full rounded-lg px-4 py-3 bg-gray-50 outline-none
+    w-full rounded-lg px-4 max-[600px]:px-1 py-3 bg-gray-50 outline-none
     ${error ? "" : "border border-gray-300"}
   `;
 }

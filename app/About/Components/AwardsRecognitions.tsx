@@ -46,13 +46,13 @@ export default function AwardsAndJourney() {
 
             {/* IMAGE */}
             <div className="relative h-[240px] sm:h-[300px] lg:h-full">
-              <Image
+              {/* <Image
                 src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769164887/WhatsApp_Image_2026-01-23_at_16.10.12_cj1kii.jpg"
                 alt="Our Team"
                 fill
                 className="object-cover"
                 priority
-              />
+              /> */}
             </div>
           </div>
         </div>

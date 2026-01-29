@@ -62,8 +62,8 @@ export default function Navbar() {
 
           <Link
             href="/ContactUs"
-            className="  p-0 justify-center
-    align-items: center; ml-4 rounded-md bg-[#1C1D28] h-[43px] w-[115px] py-2 text-sm font-semibold text-white !no-underline hover:bg-black transition text-center"
+            className="  !p-0 !flex justify-center
+    items-center ml-4 rounded-md bg-[#1C1D28] h-[43px] w-[115px] py-2 text-sm font-semibold text-white !no-underline hover:bg-black transition text-center"
           >
             Contact Us
           </Link>

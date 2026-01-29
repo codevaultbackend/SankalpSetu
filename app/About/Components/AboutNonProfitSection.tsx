@@ -2,6 +2,36 @@ import Image from "next/image";
 import { PlayIcon } from "@heroicons/react/24/solid";
 
 export default function AboutNonProfitSection() {
+  const Logos = [
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605214/SSA_Logo_png_qrzh36.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605212/Athratech_Logo_png_aalonu.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605211/Manpower_Logo_png_zhavrl.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605212/Sankalp_Setu_Logo_png_c9dokb.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605210/Construct_Ability_png_cxisnq.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605211/Gengross_Logo_png_tknk1h.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605211/JD_poulgrow_Logo_png_uhqzwf.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605210/Chugen_Logo_png_u4tihj.png",
+    },
+    {
+      img: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769605210/Decovista_logo_png_gkqzqy.webp",
+    },
+  ];
+
   return (
     <section className="w-full bg-white py-16 relative">
       <div className="green-overlay bg-[#EFF7F2] absolute w-full bottom-0 h-[60%]" />
@@ -123,6 +153,32 @@ export default function AboutNonProfitSection() {
           </div>
         </div>
       </div>
+      <div className="w-full bg-black py-12">
+        <div className="max-w-7xl mx-auto px-6">
+
+          {/* Header */}
+          <div className="flex items-center gap-6 mb-10">
+            <h1 className="text-sm tracking-[0.3em] font-semibold text-gray-500 uppercase whitespace-nowrap">
+              Our Supporters
+            </h1>
+            <span className="h-[1px] flex-1 bg-gray-700" />
+          </div>
+
+          {/* Logos */}
+          <div className="flex items-center justify-between gap-10">
+            {Logos.map((logo, index) => (
+              <img
+                key={index}
+                src={logo.img}
+                alt="Supporter logo"
+                className="h-8 w-auto object-contain grayscale opacity-60"
+              />
+            ))}
+          </div>
+
+        </div>
+      </div>
+
     </section>
   );
 }

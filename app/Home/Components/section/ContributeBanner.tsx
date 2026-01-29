@@ -6,7 +6,7 @@ export default function ContributeBanner() {
     <section className="max-w-[1440px] mx-auto relative w-full h-[280px] sm:h-[320px] lg:h-[384px] my-8 lg:my-[48px] overflow-hidden rounded-[12px]">
       {/* Background Image */}
       <Image
-        src="/HomePageBanner.png"
+        src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769498455/WhatsApp_Image_2026-01-27_at_12.50.11_apyl0l.jpg"
         alt="Wind turbines environment"
         fill
         priority

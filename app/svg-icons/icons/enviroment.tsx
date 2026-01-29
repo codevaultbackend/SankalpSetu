@@ -5,7 +5,7 @@ type IconProps = {
   className?: string;
 };
 
-export default function PatternIcon({ size = 32, className }: IconProps) {
+export default function enviroment({ size = 32, className }: IconProps) {
   return (
     <svg
       width={size}

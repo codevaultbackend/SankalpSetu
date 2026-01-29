@@ -159,7 +159,7 @@ export default function VolunteerPage() {
   /* ---------------- UI ---------------- */
 
   return (
-    <section className="min-h-screen bg-[#F3FBF6] py-16 px-4">
+    <section className="min-h-screen bg-[#F3FBF6] py-16 px-4 max-[600px]:px-2">
       {/* HEADER */}
       <div className="text-center mb-10">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#7A6A00]">
@@ -174,7 +174,7 @@ export default function VolunteerPage() {
       </div>
 
       {/* FORM CARD */}
-      <div className="mx-auto max-w-3xl rounded-xl bg-white shadow-lg p-8 space-y-10">
+      <div className="mx-auto max-w-3xl rounded-xl bg-white shadow-lg p-8 space-y-10 max-[600px]:px-4">
         {/* PERSONAL INFO */}
         <Section title="Personal Information">
           <Input name="full_name" label="Full Name" required onChange={handleChange} />
@@ -357,7 +357,7 @@ function UploadBox({ label, onFile }: any) {
       />
       <label
         htmlFor={label}
-        className="mt-2 flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 text-sm text-gray-500"
+        className="mt-2 flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 text-sm text-gray-500 p-[20px]"
       >
         ⬆ Click to upload or drag and drop
         <span className="text-xs mt-1">PNG, JPG, PDF up to 10MB</span>
@@ -374,7 +374,7 @@ function CheckboxGrid({ label, items, onToggle }: any) {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
         {items.map((item: string) => (
-          <label key={item} className="flex items-center gap-2">
+          <label key={item} className="!flex items-center gap-2">
             <input type="checkbox" onChange={() => onToggle(item)} />
             {item}
           </label>

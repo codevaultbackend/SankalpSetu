@@ -2,24 +2,24 @@ import Image from "next/image";
 
 const newsData = [
   {
-    title: "150 Youth Trained in Digital Skills",
-    image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168059/ss_page_assets/emnmh0uqylkizbh3sekz.png",
-    des: "Empowering unemployed youth with job-ready technology training",
+    title: "Grand Inauguration of Hajipur Free Skill Training Center",
+    image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769496391/WhatsApp_Image_2026-01-27_at_12.06.54_1_dxcogs.jpg",
+    des: "Empowering Hajipur Through Skill Development",
   },
   {
-    title: "Free Health Camp Reaches 500 Families",
-    image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168061/ss_page_assets/yikf8vv4yjrdoyzk2lko.png",
-    des: "Medical screening and awareness drive in rural communities",
+    title: "A Step Towards Self-Reliance: Hajipur Free Skill Training Center",
+    image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769496391/WhatsApp_Image_2026-01-27_at_12.06.54_uhnk5h.jpg",
+    des: "Skills for a Better Tomorrow",
   },
   {
-    title: "40 Women Launch Their Own Businesses",
+    title: "Supporting Women on the Path to Self-Reliance",
     image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168058/ss_page_assets/hypim0a6dypstbgjkdnt.png",
     des: "Financial literacy program creates new women entrepreneurs",
   },
   {
-    title: "Sankalp Setu Celebrates 2 Years of Impact",
+    title: "Sankalp Setu Launches Its Mission for Community Empowerment",
     image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168061/ss_page_assets/rvqkn61aksgm9u4dp8nw.png",
-    des: "Two years of transforming lives through education and healthcare",
+    des: "Sankalp Setu is dedicated to creating pathways for skill development, self-reliance, and inclusive growth.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function NewsSection() {
                 {item.title}
               </h3>
 
-              <p className="text-[16px]  leading-[160%] text-slate-500">
+              <p className="text-[16px]  leading-[160%] text-slate-500 line-clamp-2">
                 {item.des}
               </p>
             </article>

@@ -16,7 +16,7 @@ export default function ContactStep({ data, setData, next, prev }: any) {
       <div className="px-8 py-8 space-y-6">
         {/* Mobile */}
         <Field label="Mobile Number *" error={errors.mobile}>
-          <div className={inputWrapper(errors.mobile)}>
+          <div className={`${inputWrapper(errors.mobile)}  `}>
             <span className="text-gray-400">
               <i className="fa-solid fa-phone"></i>
             </span>

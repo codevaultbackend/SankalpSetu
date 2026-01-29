@@ -9,8 +9,12 @@ const blogs = [
     title: "Hajipur-1",
   },
    {
-    images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.32.32_erhrea.jpg", "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166403/WhatsApp_Image_2026-01-23_at_16.34.16_jlgsyl.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166404/WhatsApp_Image_2026-01-23_at_16.33.28_znfi5n.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769166471/WhatsApp_Image_2026-01-23_at_16.37.17_jsn7fh.jpg"],
+    images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255936/ss_page_assets/ikxracgwemqcdquppcxx.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255936/ss_page_assets/v0nzozx5gyptpcpgy0wh.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255937/ss_page_assets/xikxv6vf4gkagpkls1sq.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255937/ss_page_assets/mv3ljmh0jqhjoleuiort.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255936/ss_page_assets/lag1keouulknrpsnwkpy.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255937/ss_page_assets/inlhlhqntk4mnfq9mjb0.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769255936/ss_page_assets/ikxracgwemqcdquppcxx.jpg"],
     title: "Hajipur-2",
+  },
+   {
+    images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170376/Jaipur2.JPG_szn0ex.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769171127/DSC_3163.JPG_1_jf1tvg.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170374/Jaipur3.JPG_xsbcfp.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170375/Jaipur1.JPG_dv4jq8.jpg"],
+    title: "Jaipur",
   },
   
 ];

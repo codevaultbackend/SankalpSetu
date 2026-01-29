@@ -43,7 +43,7 @@ export default function BoardOfTrustees() {
             <div key={i} className="relative flex flex-col items-center text-center max-[600px]:mt-[32px] ">
 
               {/* Golden hat */}
-              <div className="absolute top-[-42px] max-w-[360px] !w-full h-[75px] bg-[#7A6A00] rounded-[12px]" />
+              <div className="absolute top-[-42px] max-w-[360px] !w-full h-[75px] bg-[#7A6A00] rounded-[12px] min-[600px]:!w-[500px] min-[600px]:!left-[-33px]" />    
 
               <div className="relative w-[296px] h-[390px] max-w-[600px]:overflow-hidden rounded-[8px] bg-[#F4F5F7] max-[600px]:!mx-[35px]">
                 <Image src={t.image} alt={t.name} fill className={` ${i === 3 ? 'object-fill': 'object-cover'}`} />
@@ -54,11 +54,11 @@ export default function BoardOfTrustees() {
               </p>
               <p className="text-[12px] text-[#1D2130] font-[500] !leading-[190%] ">{t.role}</p>
 
-              <div className="flex gap-[14px]  text-[#525560] leading-[100%]">
+              {/* <div className="flex gap-[14px]  text-[#525560] leading-[100%]">
                 <FaFacebookF size={20} />
                 <FaTwitter size={20} />
                 <FaLinkedinIn size={20} />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -77,11 +77,11 @@ export default function BoardOfTrustees() {
               </p>
               <p className="text-[12px] text-[#525560]">{t.role}</p>
 
-              <div className="flex gap-[14px] mt-[9px] text-[#1D2130]">
+              {/* <div className="flex gap-[14px] mt-[9px] text-[#1D2130]">
                 <FaFacebookF size={20} />
                 <FaTwitter size={20} />
                 <FaLinkedinIn size={20} />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

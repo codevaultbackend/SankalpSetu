@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function GreateFeature() {
   return (
     <section className="w-full px-4 sm:px-6 py-14 max-[600px]:py-7">
@@ -25,19 +27,22 @@ export default function GreateFeature() {
             leading-relaxed
           "
         >
-          Building stronger futures by nurturing knowledge, wellness, and hope at the grassroots level.
+          Building stronger futures by nurturing knowledge, wellness, and hope
+          at the grassroots level.
         </p>
 
         {/* IMAGE */}
-        <img
-          src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/dfo1d9ifdi5b4kj1lsjd.png"
-          alt="ContactUs"
-          className="
+        <Link href="/ContactUs">
+          <img
+            src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/dfo1d9ifdi5b4kj1lsjd.png"
+            alt="ContactUs"
+            className="
             mx-auto mt-8 mb-16
             w-[240px] sm:w-[300px] md:w-[403px]
             h-auto
           "
-        />
+          />
+        </Link>
       </div>
     </section>
   );
