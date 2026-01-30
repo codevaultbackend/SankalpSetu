@@ -47,7 +47,7 @@ export default function NgoRegistrationPage() {
 
       <Stepper step={step} />
 
-      <div className="max-w-[900px] mx-auto mt-6 px-4">
+      <div className="max-w-[900px] mx-auto mt-6 ">
         <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
           {step === 0 && (
             <OrganizationStep data={data} setData={setData} next={() => setStep(1)} />
