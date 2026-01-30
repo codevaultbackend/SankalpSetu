@@ -153,32 +153,6 @@ export default function AboutNonProfitSection() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-black py-12">
-        <div className="max-w-7xl mx-auto px-6">
-
-          {/* Header */}
-          <div className="flex items-center gap-6 mb-10">
-            <h1 className="text-sm tracking-[0.3em] font-semibold text-gray-500 uppercase whitespace-nowrap">
-              Our Supporters
-            </h1>
-            <span className="h-[1px] flex-1 bg-gray-700" />
-          </div>
-
-          {/* Logos */}
-          <div className="flex items-center justify-between gap-10">
-            {Logos.map((logo, index) => (
-              <img
-                key={index}
-                src={logo.img}
-                alt="Supporter logo"
-                className="h-8 w-auto object-contain grayscale opacity-60"
-              />
-            ))}
-          </div>
-
-        </div>
-      </div>
-
     </section>
   );
 }

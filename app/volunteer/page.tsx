@@ -344,27 +344,40 @@ function Textarea({ label, name, onChange }: any) {
 }
 
 function UploadBox({ label, onFile }: any) {
+  const [uploaded, setUploaded] = useState(false);
+
   return (
     <div>
       <label className="text-sm font-medium text-gray-700">
         {label} <span className="text-red-500">*</span>
       </label>
+
       <input
         type="file"
         className="hidden"
         id={label}
-        onChange={(e) => onFile(e.target.files?.[0] || null)}
+        onChange={(e) => {
+          const file = e.target.files?.[0] || null;
+          setUploaded(!!file);
+          onFile(file);
+        }}
       />
+
       <label
         htmlFor={label}
-        className="mt-2 flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 text-sm text-gray-500 p-[20px]"
+        className={`mt-2 flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed p-5 text-sm transition
+          ${uploaded
+            ? "border-green-500 bg-green-50 text-green-700"
+            : "border-gray-300 text-gray-500"
+          }
+        `}
       >
-        ⬆ Click to upload or drag and drop
-        <span className="text-xs mt-1">PNG, JPG, PDF up to 10MB</span>
+        {uploaded ? "✅ Document uploaded" : "⬆ Click to upload or drag and drop"}
       </label>
     </div>
   );
 }
+
 
 function CheckboxGrid({ label, items, onToggle }: any) {
   return (

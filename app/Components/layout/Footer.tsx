@@ -106,7 +106,7 @@ export default function Footer() {
           <div className="max-w-full lg:max-w-md">
             <div className="flex flex-col gap-3 mb-6 lg:mb-8">
               <Image
-                src="/SankalpSetuLogo.png"
+                src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/tuxk3zhj7xz8qpg6n8pw.png"
                 alt="Sankalp Setu"
                 width={60}
                 height={71}

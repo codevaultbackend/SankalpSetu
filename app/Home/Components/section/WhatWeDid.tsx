@@ -95,7 +95,7 @@ export default function WhatWeDid() {
             <span className="w-10 h-[1px] bg-[#4F4F4F]" />
           </div>
 
-          <p className="text-[#4F4F4F] !text-[26px]">(CEO)</p>
+          <p className="text-[#4F4F4F] !text-[26px]">(Founder & Chairperson)</p>
         </div>
       </div>
     </section>
