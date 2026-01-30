@@ -94,15 +94,15 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`relative text-sm font-medium ${
-                  isActive(item.href) ? "text-[#1C1D28]" : "text-gray-600"
+                className={`relative text-sm font-medium !no-underline ${
+                  isActive(item.href) ? "!text-[#1C1D28]" : "!text-gray-600"
                 }`}
               >
                 {item.name}
 
                 {/* Active indicator */}
                 {isActive(item.href) && (
-                  <span className="absolute left-0 -bottom-1 h-[2px] w-6 bg-[#1C1D28]" />
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-6 bg-[#1C1D28] !no-underline" />
                 )}
               </Link>
             ))}
