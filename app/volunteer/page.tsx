@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { ReactNode } from "react";
+import { useState, ReactNode } from "react";
 import { volunteerService } from "../services/volunteer.service";
+
+/* ---------------- TYPES ---------------- */
 
 interface VolunteerFormState {
   full_name: string;
@@ -19,54 +20,11 @@ interface VolunteerFormState {
   document_back: File | null;
 }
 
-
-
-interface SectionProps {
-  title: string;
-  subtitle?: string;
-  children: ReactNode;
-}
-
-interface TwoColProps {
-  children: ReactNode;
-}
-
-interface InputProps {
-  label: string;
-  name: string;
-  required?: boolean;
-  onChange: React.ChangeEventHandler<
-    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-  >;
-}
-
-interface SelectProps {
-  label: string;
-  name: string;
-  required?: boolean;
-  onChange: React.ChangeEventHandler<HTMLSelectElement>;
-}
-
-interface TextareaProps {
-  label: string;
-  name: string;
-  onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
-}
-
-interface UploadBoxProps {
-  label: string;
-  onFile: (file: File | null) => void;
-}
-
-interface CheckboxGridProps {
-  label: string;
-  items: string[];
-  onToggle: (value: string) => void;
-}
-
+/* ---------------- PAGE ---------------- */
 
 export default function VolunteerPage() {
   const [loading, setLoading] = useState(false);
+  const [resetKey, setResetKey] = useState(0);
 
   const [form, setForm] = useState<VolunteerFormState>({
     full_name: "",
@@ -130,7 +88,6 @@ export default function VolunteerPage() {
     try {
       const fd = new FormData();
 
-      // 🔥 EXACT BACKEND FIELD NAMES
       fd.append("full_name", form.full_name);
       fd.append("phone", form.phone);
       fd.append("email", form.email);
@@ -148,7 +105,26 @@ export default function VolunteerPage() {
 
       await volunteerService.submitVolunteer(fd);
 
-      alert("Volunteer registered successfully ");
+      // ✅ RESET STATE
+      setForm({
+        full_name: "",
+        phone: "",
+        email: "",
+        age: "",
+        gender: "",
+        address: "",
+        skill: [],
+        availability: [],
+        interest: [],
+        skill_note: "",
+        document_front: null,
+        document_back: null,
+      });
+
+      // ✅ RESET FILE INPUTS
+      setResetKey((k) => k + 1);
+
+      alert("Volunteer registered successfully");
     } catch (err: any) {
       alert(err.message || "Submission failed");
     } finally {
@@ -160,7 +136,6 @@ export default function VolunteerPage() {
 
   return (
     <section className="min-h-screen bg-[#F3FBF6] py-16 px-4 max-[600px]:px-2">
-      {/* HEADER */}
       <div className="text-center mb-10">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#7A6A00]">
           <span className="text-white text-xl">♡</span>
@@ -173,40 +148,77 @@ export default function VolunteerPage() {
         </p>
       </div>
 
-      {/* FORM CARD */}
       <div className="mx-auto max-w-3xl rounded-xl bg-white shadow-lg p-8 space-y-10 max-[600px]:px-4">
-        {/* PERSONAL INFO */}
         <Section title="Personal Information">
-          <Input name="full_name" label="Full Name" required onChange={handleChange} />
+          <Input
+            name="full_name"
+            label="Full Name"
+            required
+            value={form.full_name}
+            onChange={handleChange}
+          />
+
           <TwoCol>
-            <Input name="phone" label="Phone Number" required onChange={handleChange} />
-            <Input name="email" label="Email Address" required onChange={handleChange} />
+            <Input
+              name="phone"
+              label="Phone Number"
+              required
+              value={form.phone}
+              onChange={handleChange}
+            />
+            <Input
+              name="email"
+              label="Email Address"
+              required
+              value={form.email}
+              onChange={handleChange}
+            />
           </TwoCol>
+
           <TwoCol>
-            <Input name="age" label="Age" required onChange={handleChange} />
-            <Select name="gender" label="Gender" required onChange={handleChange} />
+            <Input
+              name="age"
+              label="Age"
+              required
+              value={form.age}
+              onChange={handleChange}
+            />
+            <Select
+              name="gender"
+              label="Gender"
+              required
+              value={form.gender}
+              onChange={handleChange}
+            />
           </TwoCol>
-          <Input name="address" label="Address" required onChange={handleChange} />
+
+          <Input
+            name="address"
+            label="Address"
+            required
+            value={form.address}
+            onChange={handleChange}
+          />
         </Section>
 
-        {/* DOCUMENTS */}
         <Section
           title="Identity Documents"
           subtitle="Please upload a valid government-issued ID (both front and back)"
         >
           <TwoCol>
             <UploadBox
+              key={`front-${resetKey}`}
               label="Document Front"
               onFile={(f) => handleFile("document_front", f)}
             />
             <UploadBox
+              key={`back-${resetKey}`}
               label="Document Back"
               onFile={(f) => handleFile("document_back", f)}
             />
           </TwoCol>
         </Section>
 
-        {/* DETAILS */}
         <Section title="Volunteer Details">
           <CheckboxGrid
             label="Skills & Expertise"
@@ -221,12 +233,14 @@ export default function VolunteerPage() {
               "Counseling",
               "Other",
             ]}
+            selected={form.skill}
             onToggle={(v) => toggleCheckbox("skill", v)}
           />
 
           <Textarea
             label="Additional Skills or Notes"
             name="skill_note"
+            value={form.skill_note}
             onChange={handleChange}
           />
 
@@ -240,6 +254,7 @@ export default function VolunteerPage() {
               "Weekend Afternoons",
               "Weekend Evenings",
             ]}
+            selected={form.availability}
             onToggle={(v) => toggleCheckbox("availability", v)}
           />
 
@@ -255,11 +270,11 @@ export default function VolunteerPage() {
               "Health & Wellness",
               "Arts & Culture",
             ]}
+            selected={form.interest}
             onToggle={(v) => toggleCheckbox("interest", v)}
           />
         </Section>
 
-        {/* SUBMIT */}
         <button
           onClick={handleSubmit}
           disabled={loading}
@@ -276,7 +291,7 @@ export default function VolunteerPage() {
   );
 }
 
-/* ---------------- UI COMPONENTS ---------------- */
+/* ---------------- COMPONENTS ---------------- */
 
 function Section({ title, subtitle, children }: any) {
   return (
@@ -294,7 +309,7 @@ function TwoCol({ children }: any) {
   return <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">{children}</div>;
 }
 
-function Input({ label, name, required, onChange }: any) {
+function Input({ label, name, value, required, onChange }: any) {
   return (
     <div>
       <label className="text-sm font-medium text-gray-700">
@@ -302,6 +317,7 @@ function Input({ label, name, required, onChange }: any) {
       </label>
       <input
         name={name}
+        value={value}
         onChange={onChange}
         className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2"
       />
@@ -309,7 +325,7 @@ function Input({ label, name, required, onChange }: any) {
   );
 }
 
-function Select({ label, name, required, onChange }: any) {
+function Select({ label, name, value, required, onChange }: any) {
   return (
     <div>
       <label className="text-sm font-medium text-gray-700">
@@ -317,24 +333,26 @@ function Select({ label, name, required, onChange }: any) {
       </label>
       <select
         name={name}
+        value={value}
         onChange={onChange}
         className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2"
       >
         <option value="">Select...</option>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
       </select>
     </div>
   );
 }
 
-function Textarea({ label, name, onChange }: any) {
+function Textarea({ label, name, value, onChange }: any) {
   return (
     <div>
       <label className="text-sm font-medium text-gray-700">{label}</label>
       <textarea
         name={name}
+        value={value}
         onChange={onChange}
         rows={4}
         className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2"
@@ -354,8 +372,8 @@ function UploadBox({ label, onFile }: any) {
 
       <input
         type="file"
-        className="hidden"
         id={label}
+        className="hidden"
         onChange={(e) => {
           const file = e.target.files?.[0] || null;
           setUploaded(!!file);
@@ -366,11 +384,11 @@ function UploadBox({ label, onFile }: any) {
       <label
         htmlFor={label}
         className={`mt-2 flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed p-5 text-sm transition
-          ${uploaded
-            ? "border-green-500 bg-green-50 text-green-700"
-            : "border-gray-300 text-gray-500"
-          }
-        `}
+          ${
+            uploaded
+              ? "border-green-500 bg-green-50 text-green-700"
+              : "border-gray-300 text-gray-500"
+          }`}
       >
         {uploaded ? "✅ Document uploaded" : "⬆ Click to upload or drag and drop"}
       </label>
@@ -378,8 +396,7 @@ function UploadBox({ label, onFile }: any) {
   );
 }
 
-
-function CheckboxGrid({ label, items, onToggle }: any) {
+function CheckboxGrid({ label, items, selected, onToggle }: any) {
   return (
     <div>
       <p className="text-sm font-medium text-gray-700 mb-2">
@@ -387,8 +404,12 @@ function CheckboxGrid({ label, items, onToggle }: any) {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
         {items.map((item: string) => (
-          <label key={item} className="!flex items-center gap-2">
-            <input type="checkbox" onChange={() => onToggle(item)} />
+          <label key={item} className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={selected.includes(item)}
+              onChange={() => onToggle(item)}
+            />
             {item}
           </label>
         ))}
