@@ -162,6 +162,7 @@ export default function VolunteerPage() {
             <Input
               name="phone"
               label="Phone Number"
+              type='number'
               required
               value={form.phone}
               onChange={handleChange}
@@ -169,6 +170,7 @@ export default function VolunteerPage() {
             <Input
               name="email"
               label="Email Address"
+              type='email'
               required
               value={form.email}
               onChange={handleChange}

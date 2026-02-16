@@ -36,7 +36,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8 outline-0">
+        <nav className="hidden lg:flex items-center gap-6 outline-0">
           {[
             { name: "Home", href: "/" },
             { name: "About us", href: "/About" },
@@ -53,20 +53,28 @@ export default function Navbar() {
 
               {/* Animated underline */}
               <span
-                className={`${underlineBase} group-hover:scale-x-100 ${
-                  isActive(item.href) ? underlineActive : ""
-                }`}
+                className={`${underlineBase} group-hover:scale-x-100 ${isActive(item.href) ? underlineActive : ""
+                  }`}
               />
             </Link>
           ))}
 
           <Link
+            href="/DonateUs"
+            onClick={() => setIsOpen(false)}
+            className=" inline-block rounded-md !bg-white  py-2 text-sm font-semibold !text-[#1C1D28] text-center border-[#1C1D28] border-2 hover:bg-black transition px-2 !no-underline "
+          >
+            Donate Us
+          </Link>
+
+          <Link
             href="/ContactUs"
             className="  !p-0 !flex justify-center
-    items-center ml-4 rounded-md bg-[#1C1D28] h-[43px] w-[115px] py-2 text-sm font-semibold text-white !no-underline hover:bg-black transition text-center"
+    items-center  rounded-md bg-[#1C1D28] h-[43px] w-[115px] py-2 text-sm font-semibold text-white !no-underline hover:bg-black transition text-center"
           >
             Contact Us
           </Link>
+
         </nav>
 
         {/* Hamburger Button */}
@@ -94,9 +102,8 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`relative text-sm font-medium !no-underline ${
-                  isActive(item.href) ? "!text-[#1C1D28]" : "!text-gray-600"
-                }`}
+                className={`relative text-sm font-medium !no-underline ${isActive(item.href) ? "!text-[#1C1D28]" : "!text-gray-600"
+                  }`}
               >
                 {item.name}
 
@@ -114,6 +121,7 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
+
           </nav>
         </div>
       )}

@@ -8,7 +8,7 @@ export default function ContactDetails() {
           {/* LEFT IMAGE */}
           <div className="relative flex justify-center items-end">
             <Image
-              src="/contactus.png"
+              src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168065/ss_page_assets/nektdcr9qkysmfzmjyhu.png"
               alt="Contact visual"
               width={520}
               height={520}
