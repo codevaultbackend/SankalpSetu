@@ -38,7 +38,7 @@ export default function EventHero() {
               {/* LEFT IMAGE AREA */}
               <div className="relative w-full lg:w-1/2 flex justify-center">
                 {/* MAIN PILL IMAGE */}
-                <div className="relative w-[420px] h-[620px] rounded-[220px] overflow-hidden shadow-2xl">
+                <div className="relative max-[768px]:h-[480px] w-[420px] h-[620px] rounded-[220px] overflow-hidden shadow-2xl">
                   <img
                     src={item.image}
                     alt="Event"
@@ -79,11 +79,11 @@ export default function EventHero() {
                   {item.tag}
                 </p>
 
-                <h1 className="text-[40px] leading-[1.2] font-bold text-black mb-6">
+                <h1 className="text-[40px] max-[768px]:text-[22px] leading-[1.2] font-bold text-black mb-6">
                   {item.title}
                 </h1>
 
-                <p className="text-[16px] text-gray-600 leading-[1.9] max-w-[560px] mb-10">
+                <p className="text-[16px] max-[768px]:text-[14px] text-gray-600 leading-[1.9] max-w-[560px] mb-10">
                   {item.description}
                 </p>
 

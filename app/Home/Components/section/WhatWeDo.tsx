@@ -15,7 +15,7 @@ export default function WhatWeDo() {
       <img
         src="https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/wgkex80xyrs5gurrzsne.png"
         alt="CircularArrow"
-        className="absolute max-[800px]:h-[105px] max-[800px]:w-[151px] max-[800px]:top-[-32px] h-[317px] w-[450px] right-0 -top-[8%]"
+        className="absolute max-[1000px]:h-[145px] max-[1000px]:w-[181px] max-[1000px]:top-[0px] max-[600px]:top-[-2%] h-[317px] w-[450px] right-0 -top-[8%] max-[900px]:top-0 "
       />
 
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
@@ -82,14 +82,14 @@ export default function WhatWeDo() {
 
                 {/* CONTENT */}
                 <div className="max-w-md text-center lg:!text-left">
-                  <h3 className="relative mb-6 font-semibold !text-[40px] !leading-[130%] max-[600px]:!text-[22px] max-[600px]:!my-[3px] max-[600px]:!mb-[8px]  lg:text-[28px] flex flex-wrap gap-1">
+                  <h3 className="relative mb-6 font-semibold !text-[40px] !leading-[130%] max-[600px]:!text-[22px] max-[600px]:!my-[3px] max-[600px]:!mb-[8px] max-[900px]:justify-center lg:text-[28px] flex flex-wrap gap-1">
                     {/* Outline / Shadow Text */}
 
                     {/* Main Visible Text */}
                     
                     <span
                       aria-hidden
-                      className=" pointer-events-none select-none max-[600px]:!mx-auto !tracking-[0.06em]"
+                      className=" pointer-events-none select-none max-[600px]:!mx-auto !tracking-[0.06em] max-[800px]:text-center"
                       style={{
                         WebkitTextStroke: "1px #535353",
                         color: "transparent",

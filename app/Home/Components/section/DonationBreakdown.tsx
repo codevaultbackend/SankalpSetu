@@ -72,11 +72,10 @@ export default function DonationBreakdown() {
 
           {/* LEGEND */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-2 text-[15px] font-medium text-black">
-            <Legend color="bg-[#B9F5C0]" text="40% Skill Developement" />
-            <Legend color="bg-[#B39DFA]" text="35% Education" />
-            <Legend color="bg-[#F9D36A]" text="10% Women Empowerment" />
-            <Legend color="bg-[#F78FB3]" text="10% Old age Care" />
-            <Legend color="bg-[#FFE6A6]" text="5% Food safty" />
+            <Legend color="bg-[#B9F5C0]" text="18% Skill Developement" />
+            <Legend color="bg-[#B39DFA]" text="52% Education" />
+            <Legend color="bg-[#F9D36A]" text="18% Women Empowerment" />
+            <Legend color="bg-[#F78FB3]" text="12% Old age Care" />
           </div>
         </div>
 

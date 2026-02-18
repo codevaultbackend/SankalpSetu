@@ -40,7 +40,7 @@ export default function HeroSection() {
       </div>
 
       {/* ================= MOBILE – FIXED ================= */}
-      <div className="lg:hidden mx-auto w-[360px] grid grid-cols-3 gap-[14px] auto-rows-auto">
+      <div className="lg:hidden md-hidden mx-auto w-full grid grid-cols-3 gap-[14px] auto-rows-auto">
 
         <div className="row-span-2">
           <GalleryBig mobile />
@@ -96,7 +96,7 @@ function Card95({ mobile = false }) {
   return (
    <div className="rounded-[32px] bg-[#0d3b2e] p-5 max-[600px]:!p-[11px] text-white flex flex-col justify-between aspect-[3/5]">
       <h3 className="text-[15px] min-[600px]:text-[27px] font-bold">96%</h3>
-      <p className="text-[7px] leading-snug min-[600px]:text-[17px]">
+      <p className="text-[7px] leading-snug min-[600px]:text-[17px] line-clamp-5">
         Sankalp Setu Foundation organized a community-driven event focused on education and awareness.
       </p>
       <div className="flex justify-between items-center">
@@ -143,7 +143,7 @@ function Education95() {
   return (
     <div className="rounded-[32px] bg-[#0d3b2e] p-5 text-white flex flex-col justify-between aspect-[3/5]">
       <h3 className="text-[17px] font-bold">96%</h3>
-      <p className="text-[8px] leading-snug">
+      <p className="text-[7px] leading-snug min-[600px]:text-[17px] line-clamp-5">
         Sankalp Setu Foundation organized a community-driven event focused on education and awareness.
       </p>
       <div className="flex justify-between items-center">

@@ -34,7 +34,7 @@ export default async function EventsSection() {
         {/* HEADER */}
         <div className="flex items-center gap-6 mb-10">
            <div className=" flex  w-full items-center max-[600px]:flex-wrap max-[600px]:!flex-col">
-             <h2 className="text-[40px] sm:text-[34px] lg:text-[40px] font-[500] text-[#1D2130] mb-6">
+             <h2 className="text-[40px] sm:text-[34px] lg:text-[40px] font-[500] text-[#1D2130] mb-6 whitespace-nowrap mr-[20px]">
             Our Events
           </h2>
             <div className=" h-[1px] bg-[#E5E5E5] ml-auto w-[85%]" />
@@ -50,8 +50,8 @@ export default async function EventsSection() {
             className="
               grid
               grid-cols-1
-              sm:grid-cols-2
-              sm:auto-cols-[calc(50%-12px)]
+              sm:grid-cols-1
+              lg:grid-cols-2
               gap-6
               overflow-x-auto
               scroll-smooth

@@ -51,7 +51,7 @@ export default function WhatWeDid() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover max-[600px]:!w-fit max-[600px]:h-[430px] max-[600px]:max-w-auto"
+                  className="object-cover max-[600px]:!w-full max-[600px]:h-[430px] max-[600px]:max-w-auto"
                 />
               </div>
 

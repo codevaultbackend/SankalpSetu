@@ -99,7 +99,7 @@ export default function AboutSection() {
         </div>
 
         {/* ================= CONTENT ================= */}
-        <div className="max-w-[560px] max-[900px]:mx-auto flex flex-col gap-10 max-[600px]:!gap-1 text-center lg:!text-left">
+        <div className="max-w-[560px] max-[900px]:mx-auto flex flex-col gap-10 max-[600px]:!gap-1 text-center lg:!text-left mx-auto">
           <div>
             <h2 className="text-[42px] sm:text-[56px] lg:!text-[72px] font-semibold leading-[100%] mb-[19px] text-black">
               About us

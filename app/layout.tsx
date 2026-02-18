@@ -36,6 +36,8 @@ export default function RootLayout({
           <Footer />
         </ServicesProvider>
 
+        
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CRL09DXGMN"
