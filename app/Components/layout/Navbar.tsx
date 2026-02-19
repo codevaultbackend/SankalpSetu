@@ -97,6 +97,8 @@ export default function Navbar() {
               { name: "What We Do", href: "/what-we-do" },
               { name: "Media", href: "/media" },
               { name: "EventPage", href: "/EventPage" },
+              { name: "Donate Us", href: "/DonateUs" },
+
             ].map((item) => (
               <Link
                 key={item.href}
