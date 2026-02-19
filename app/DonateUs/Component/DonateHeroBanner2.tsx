@@ -3,7 +3,13 @@ import Drop from "../../svg-icons/icons/Drop";
 import Ambulance from "../../svg-icons/icons/Ambulance";
 import Backpack from "../../svg-icons/icons/Backpack";
 
-export default function DonateHeroBanner2() {
+export default function DonateHeroBanner2({
+    open,
+    setOpen,
+}: {
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
 
   const bannerIconRow = [
     {
@@ -99,7 +105,7 @@ export default function DonateHeroBanner2() {
           {/* ================= BUTTON ================= */}
           <div className="pt-4">
 
-            <button className="bg-green-900 text-white px-8 py-3 rounded-full font-semibold
+            <button onClick={() => setOpen(true)} className="bg-green-900 text-white px-8 py-3 rounded-full font-semibold
                                hover:bg-green-800 transition !rounded-full">
               Donate Now
             </button>

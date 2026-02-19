@@ -1,7 +1,14 @@
 "use client";
+import Link from 'next/link';
 import LetterBox from '../../svg-icons/icons/LetterBox'
 
-export default function JoinCommunitySection() {
+export default function JoinCommunitySection({
+    open,
+    setOpen,
+}: {
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <section className="relative w-full bg-[#fff] py-[120px] px-4 overflow-hidden">
       <div className="max-w-[1100px] mx-auto text-center relative z-10">
@@ -28,9 +35,10 @@ export default function JoinCommunitySection() {
         </p>
 
         {/* CTA */}
+        <Link href='/ngo-registration' >
         <button className="bg-[#094C3B] hover:bg-[#13614a] transition text-white px-8 py-4 rounded-full text-lg font-medium">
           Join our Community
-        </button>
+        </button></Link>
       </div>
 
       {/* Decorative icons */}

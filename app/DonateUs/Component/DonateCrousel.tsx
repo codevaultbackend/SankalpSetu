@@ -48,7 +48,13 @@ const slides = [
 
 /* ---------------- COMPONENT ---------------- */
 
-export default function TravelCarousel() {
+export default function TravelCarousel({
+    open,
+    setOpen,
+}: {
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
     const [index, setIndex] = useState(0);
 
     /* Auto Play (Optional) */

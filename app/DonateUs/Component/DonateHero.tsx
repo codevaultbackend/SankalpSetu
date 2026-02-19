@@ -1,11 +1,22 @@
+"use client";
+
 import Arrow from "@/app/svg-icons/icons/Arrow";
 import Dustbin from "@/app/svg-icons/icons/Dustbin";
 import HandPick from "@/app/svg-icons/icons/HandPick";
 import Humanity from "@/app/svg-icons/icons/Humanity";
 import Oval from "@/app/svg-icons/icons/Oval";
 import Pia from "@/app/svg-icons/icons/Pia";
+import { useState } from "react";
+import DonateUsPopUp from './DonateUsPopUp'
 
-export default function DanateHero() {
+export default function DonateHero({
+    open,
+    setOpen,
+}: {
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+
     return (
         <section className="w-full lg:min-h-[820px] min-h-auto bg-black text-white overflow-hidden relative">
             <div className=" absolute top-0 right-0 object-cover">
@@ -36,7 +47,7 @@ export default function DanateHero() {
                     </p>
 
                     {/* Button */}
-                    <button className="bg-[#F8EBD7] w-[230px] text-[#000000] text-[20px]  py-3 rounded-full font-[500] hover:bg-gray-200 transition">
+                    <button onClick={() => setOpen(true)} className="bg-[#F8EBD7] w-[230px] text-[#000000] text-[20px]  py-3 rounded-full font-[500] hover:bg-gray-200 transition">
                         Donate
                     </button>
                 </div>
@@ -78,8 +89,8 @@ export default function DanateHero() {
       "
                                 />
 
-                    
-                               
+
+
                             </div>
                         </div>
 
@@ -88,7 +99,7 @@ export default function DanateHero() {
                     </div>
 
                     {/* Decorative Ring */}
-                    <div className="absolute lg:-bottom-6 -bottom-18 lg:right-14 right-0  border-[14px] !border-0  rounded-full z-[99999999]">
+                    <div className="absolute lg:-bottom-6 -bottom-18 lg:right-14 right-0  border-[14px] !border-0  rounded-full z-[99]">
                         <Dustbin className="absolute bottom-0 right-0" />
                         <Oval className="max-w-[768px]:h-[120px] max-w-[768px]:right-[-20px] max-w-[768px]:absolute max-w-[768px]:top-0" />
                     </div>

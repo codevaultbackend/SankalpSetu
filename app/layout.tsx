@@ -2,6 +2,7 @@ import Footer from "./Components/layout/Footer";
 import Navbar from "./Components/layout/Navbar";
 import { ServicesProvider } from "./context/ServicesContext";
 import Script from "next/script";
+import type { ReactNode } from "react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +11,7 @@ import "./globals.css";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
@@ -25,6 +26,14 @@ export default function RootLayout({
         {/* Font Awesome */}
         <link
           rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+
+        <link
+          rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
       </head>
@@ -35,8 +44,6 @@ export default function RootLayout({
           {children}
           <Footer />
         </ServicesProvider>
-
-        
 
         {/* Google Analytics */}
         <Script
