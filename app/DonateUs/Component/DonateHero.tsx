@@ -88,6 +88,7 @@ export default function DonateHero({
         pointer-events-none
       "
                                 />
+                                <img src="/Donationcirle.png" className="max-h-[310px] left-[-6px] !w-[410px]  absolute bottom-2 z-[9999]" alt="hero-section-sankalpsetu" />
 
 
 

@@ -9,16 +9,40 @@ import TrustedCompanies from "./TrustedCompanies";
 import DonateUsPopUp from "./DonateUsPopUp";
 
 export default function DonationWrapper() {
-  const [open, setOpen] = useState<boolean>(false);
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
   return (
     <>
-      <DonateHero open={open} setOpen={setOpen} />
-      <DonateHeroBanner open={open} setOpen={setOpen} />
-      <DonateCrousel open={open} setOpen={setOpen} />
-      <TrustedCompanies open={open} setOpen={setOpen} />
-      <JoinCommunitySection open={open} setOpen={setOpen} />
-      <DonateUsPopUp isOpen={open} onClose={() => setOpen(false)} />
+      {/* Donation Page */}
+      {!isPopupOpen && (
+        <>
+          <DonateHero
+            open={isPopupOpen}
+            setOpen={setIsPopupOpen}
+          />
+          <DonateHeroBanner
+            open={isPopupOpen}
+            setOpen={setIsPopupOpen}
+          />
+          <DonateCrousel
+            open={isPopupOpen}
+            setOpen={setIsPopupOpen}
+          />
+          <TrustedCompanies  />
+          <JoinCommunitySection
+            open={isPopupOpen}
+            setOpen={setIsPopupOpen}
+          />
+        </>
+      )}
+
+      {/* Popup */}
+      {isPopupOpen && (
+        <DonateUsPopUp
+          isOpen={isPopupOpen}
+          onClose={() => setIsPopupOpen(false)}
+        />
+      )}
     </>
   );
 }

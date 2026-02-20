@@ -46,11 +46,11 @@ export default function DonateUsPopUp({ isOpen, onClose }) {
     };
 
     return (
-        <div className="fixed sm:top-0 inset-0 bg-black/60 flex items-center justify-center z-[9999] p-4">
+        <div className="fixed max-[768px]:static sm:top-0 inset-0 bg-black/60 flex items-center justify-center z-[9999] p-4 max-[768px]:p-0">
             <div className="w-full max-w-[900px] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row animate-[fadeIn_.3s_ease]">
 
                 {/* ================= LEFT SIDEBAR ================= */}
-                <div className="w-full md:w-[324px] bg-black p-5 pr-0 space-y-4">
+                <div className="w-full md:w-[324px] bg-black p-5 pr-0 space-y-4 max-[768px]:!p-4">
                     <div className="bg-[#95B562] text-white p-4 rounded-lg flex gap-1.5 lg:mr-5">
                         <div className="logo h-[40px] w-[40px] bg-white rounded-full">
                             <img src="/favicon.svg" alt="sankalpsetu" className="object-cover h-full w-full p-[10px] " />
@@ -67,7 +67,7 @@ export default function DonateUsPopUp({ isOpen, onClose }) {
 
                     <div
                         onClick={() => setActiveTab("qr")}
-                        className={` cursor-pointer p-3 rounded-lg rounded-br-none rounded-tr-none transition ${activeTab === "qr"
+                        className={` cursor-pointer p-3 rounded-lg rounded-br-none max-[768px]:!rounded-lg rounded-tr-none transition ${activeTab === "qr"
                             ? "bg-gray-200"
                             : "bg-white hover:bg-gray-100"
                             }`}
@@ -77,7 +77,7 @@ export default function DonateUsPopUp({ isOpen, onClose }) {
 
                     <div
                         onClick={() => setActiveTab("bank")}
-                        className={` cursor-pointer p-3 rounded-br-none rounded-tr-none rounded-lg transition ${activeTab === "bank"
+                        className={` cursor-pointer p-3 rounded-br-none rounded-tr-none rounded-lg max-[768px]:!rounded-lg transition ${activeTab === "bank"
                             ? "bg-gray-200"
                             : "bg-white hover:bg-gray-100"
                             }`}
