@@ -16,6 +16,10 @@ const blogs = [
     images: ["https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170376/Jaipur2.JPG_szn0ex.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769171127/DSC_3163.JPG_1_jf1tvg.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170374/Jaipur3.JPG_xsbcfp.jpg","https://res.cloudinary.com/ddcy9noqo/image/upload/v1769170375/Jaipur1.JPG_dv4jq8.jpg"],
     title: "Jaipur",
   },
+  {
+    images: ["https://res.cloudinary.com/athratech/image/upload/v1773042284/WhatsApp_Image_2026-03-03_at_16.53.11_u9idce.jpg","https://res.cloudinary.com/athratech/image/upload/v1773042286/WhatsApp_Image_2026-03-03_at_16.53.10_xf0nin.jpg","https://res.cloudinary.com/athratech/image/upload/v1773042285/WhatsApp_Image_2026-03-03_at_16.52.40_uv1dye.jpg","https://res.cloudinary.com/athratech/image/upload/v1773042285/WhatsApp_Image_2026-03-03_at_16.53.15_cflgxa.jpg","https://res.cloudinary.com/athratech/image/upload/v1773042285/WhatsApp_Image_2026-03-03_at_16.53.13_wtjism.jpg","https://res.cloudinary.com/athratech/image/upload/v1773042285/WhatsApp_Image_2026-03-03_at_16.53.16_sltudt.jpg"],
+    title: "Relief Distribution – Sankalp Setu",
+  },
   
 ];
 
