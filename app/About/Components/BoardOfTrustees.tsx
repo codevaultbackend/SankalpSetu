@@ -2,8 +2,8 @@ import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const trustees = [
-  { name: "Mr. Deepak Kumar", role: "Founder & Chairperson", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/suhawmdyttxpzfbaj49v.jpg" },
-  { name: "Mr. Jagannath Kumar", role: "Secretariat", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/f8s7zqfub62rerbver4i.jpg" },
+  { name: "Mr. Deepak Kumar", role: "Chairman", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/suhawmdyttxpzfbaj49v.jpg" },
+  { name: "Mr. Jagannath Kumar", role: "Secretary", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168056/ss_page_assets/f8s7zqfub62rerbver4i.jpg" },
   { name: "Mr. Nihal Kumar Gupta", role: "Treasurer", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/adck0mq8ewiejntqq6si.jpg" },
   { name: "Mr. Sarvan Jha", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168057/ss_page_assets/etmddt1fbrtb0qslbcbk.jpg" },
   { name: "Mr. Raman Srivastav", role: "Team Member", image: "https://res.cloudinary.com/ddcy9noqo/image/upload/v1769168059/ss_page_assets/idrhtutsykug6jajedxy.png" },
